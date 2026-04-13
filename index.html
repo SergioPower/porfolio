@@ -578,66 +578,83 @@
 					<div class="space-y-6">
 
 						<!-- EMAIL -->
-						<a class="flex items-center gap-6 group"
-							href="mailto:serguz95444@gmail.com?subject=Interes%20en%20tus%20servicios&body=Hola%20Sergio,%20quiero%20información%20sobre%20tu%20servicio">
+						<div class="flex items-center gap-6">
 
-							<div
-								class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+							<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center">
 								<span class="material-symbols-outlined text-primary">mail</span>
 							</div>
 
 							<div>
-								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Email</p>
+								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">
+									Email
+								</p>
 								<p class="text-xl text-white">serguz95444@gmail.com</p>
 							</div>
 
-						</a>
+						</div>
 
 						<!-- WHATSAPP -->
-						<a class="flex items-center gap-6 group"
-							href="https://wa.me/525525184112?text=Hola%20Sergio,%20vi%20tu%20portafolio%20y%20quiero%20información%20sobre%20tus%20servicios"
-							target="_blank">
+						<div class="flex items-center gap-6">
 
-							<div
-								class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+							<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center">
 								<span class="material-symbols-outlined text-secondary">chat</span>
 							</div>
 
 							<div>
-								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">WhatsApp</p>
+								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">
+									WhatsApp
+								</p>
 								<p class="text-xl text-white">+52 552 518 4112</p>
 							</div>
 
-						</a>
+						</div>
 
 					</div>
 				</div>
 				<div class="bg-surface-container-low p-10 rounded-[2.5rem] border border-outline-variant/10 shadow-2xl">
-					<form class="space-y-6">
+					<form class="space-y-6" action="https://formsubmit.co/serguz95444@gmail.com" method="POST">
+						<!-- Configuración -->
+						<input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_autoresponse" value="Gracias por contactarme, te responderé pronto.">
+						<!-- Opcional: redirección -->
+						<!-- <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> -->
+
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
 							<div class="space-y-2">
-								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Nombre</label>
-								<input
+								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">
+									Nombre
+								</label>
+								<input name="nombre" required
 									class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
 									placeholder="Tu nombre" type="text" />
 							</div>
+
 							<div class="space-y-2">
-								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Email</label>
-								<input
+								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">
+									Email
+								</label>
+								<input name="email" required
 									class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
 									placeholder="tu@email.com" type="email" />
 							</div>
+
 						</div>
+
 						<div class="space-y-2">
-							<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Mensaje</label>
-							<textarea
+							<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">
+								Mensaje
+							</label>
+							<textarea name="mensaje" required
 								class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
 								placeholder="Cuéntame sobre tu proyecto..." rows="4"></textarea>
 						</div>
+
 						<button
 							class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-5 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95"
 							type="submit">
-							Enviar Mensaje
+							Solicitar Información
 						</button>
 					</form>
 				</div>
