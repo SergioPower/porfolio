@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Architect.Dev | Desarrollador Web</title>
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet" />
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					"colors": {
+						"surface-variant": "#2d3449",
+						"on-tertiary-fixed-variant": "#2f2ebe",
+						"tertiary-fixed": "#e1e0ff",
+						"on-primary": "#003543",
+						"on-secondary-container": "#00311f",
+						"secondary-fixed": "#6ffbbe",
+						"tertiary": "#edeaff",
+						"primary": "#d2f2ff",
+						"surface-container-highest": "#2d3449",
+						"on-primary-container": "#006178",
+						"surface-container-high": "#222a3d",
+						"inverse-on-surface": "#283044",
+						"on-secondary": "#003824",
+						"secondary-container": "#00a572",
+						"on-secondary-fixed-variant": "#005236",
+						"tertiary-container": "#ccccff",
+						"background": "#0b1326",
+						"inverse-primary": "#00677f",
+						"inverse-surface": "#dae2fd",
+						"surface": "#0b1326",
+						"surface-container-low": "#131b2e",
+						"outline": "#849396",
+						"on-error-container": "#ffdad6",
+						"error-container": "#93000a",
+						"on-error": "#690005",
+						"surface-container-lowest": "#060e20",
+						"on-secondary-fixed": "#002113",
+						"on-tertiary-fixed": "#07006c",
+						"tertiary-fixed-dim": "#c0c1ff",
+						"secondary": "#4edea3",
+						"surface-bright": "#31394d",
+						"error": "#ffb4ab",
+						"on-primary-fixed-variant": "#004e60",
+						"secondary-fixed-dim": "#4edea3",
+						"outline-variant": "#3b494c",
+						"on-primary-fixed": "#001f28",
+						"surface-container": "#171f33",
+						"surface-tint": "#4cd6ff",
+						"on-surface": "#dae2fd",
+						"on-tertiary-container": "#4344d1",
+						"primary-fixed-dim": "#4cd6ff",
+						"primary-fixed": "#b7eaff",
+						"on-background": "#dae2fd",
+						"surface-dim": "#0b1326",
+						"primary-container": "#7bddff",
+						"on-tertiary": "#1000a9",
+						"on-surface-variant": "#bac9cc"
+					},
+					"borderRadius": {
+						"DEFAULT": "0.25rem",
+						"lg": "0.5rem",
+						"xl": "0.75rem",
+						"full": "9999px"
+					},
+					"fontFamily": {
+						"headline": ["Manrope"],
+						"body": ["Inter"],
+						"label": ["Inter"]
+					}
+				},
+			},
+		}
+	</script>
+	<style>
+		.material-symbols-outlined {
+			font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+		}
+
+		.glass-card {
+			background: rgba(45, 52, 73, 0.4);
+			backdrop-filter: blur(12px);
+		}
+
+		.gradient-line {
+			height: 1px;
+			background: linear-gradient(90deg, transparent, #3b494c, transparent);
+		}
+	</style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+	<!-- TopNavBar -->
+	<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-2xl shadow-cyan-900/10">
+		<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+			<div class="text-xl font-bold tracking-tighter text-slate-50 font-headline">
+				Architect.Dev
+			</div>
+			<div class="hidden md:flex items-center gap-8">
+				<a class="font-manrope tracking-tight font-semibold text-cyan-400 border-b-2 border-cyan-400 pb-1"
+					href="#services">Services</a>
+				<a class="font-manrope tracking-tight font-semibold text-slate-400 hover:text-slate-100 transition-colors"
+					href="#projects">Projects</a>
+				<a class="font-manrope tracking-tight font-semibold text-slate-400 hover:text-slate-100 transition-colors"
+					href="#about">About</a>
+				<a class="font-manrope tracking-tight font-semibold text-slate-400 hover:text-slate-100 transition-colors"
+					href="#contact">Contact</a>
+			</div>
+			<button
+				class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">
+				Hire Me
+			</button>
+		</div>
+	</nav>
+	<main class="pt-24">
+		<!-- Hero Section - Reduced Vertical Spacing -->
+		<section class="relative min-h-[700px] flex items-center px-6 overflow-hidden">
+			<div class="absolute inset-0 z-0">
+				<div class="absolute top-1/4 -right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+				<div class="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[120px]"></div>
+			</div>
+			<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-12">
+				<div class="lg:col-span-7">
+					<h1 class="text-5xl md:text-6xl font-extrabold font-headline leading-tight tracking-tight text-white mb-6">
+						Desarrollador Web | <span
+							class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Creo soluciones
+							digitales</span> para tu negocio
+					</h1>
+					<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 font-light leading-relaxed">
+						Especializado en automatización, páginas modernas y sistemas web personalizados que impulsan tu crecimiento.
+					</p>
+					<div class="flex flex-wrap gap-4">
+						<button
+							class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(76,214,255,0.3)] transition-all">
+							Contactar por WhatsApp
+						</button>
+						<button
+							class="bg-surface-container-highest border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-variant transition-colors">
+							Ver Proyectos
+						</button>
+					</div>
+				</div>
+				<!-- Smaller Profile Image Container -->
+				<div class="lg:col-span-5 hidden lg:block">
+					<div class="relative group max-w-sm mx-auto">
+						<div
+							class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000">
+						</div>
+						<div
+							class="relative bg-surface-container-low rounded-2xl overflow-hidden aspect-square flex items-center justify-center p-6">
+							<img alt="Technical Code Interface"
+								class="w-full h-full object-cover rounded-xl opacity-80 group-hover:scale-105 transition-transform duration-700"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhct3jo2tBNjBKbzYzx2-ckOOMeOGMDWDyW901Xbrh3yqYS4ecPjkx-jZJktJbHuAG3_-YC1VNX1mG9AHKl-Q0xfbjyEs_wYUkJw4-d1Zr2hzo-Op44J-zrDA8i9B95lcpdTy2UmIFIzLL9g8MOSq0qtVggGTL742YogZ0_6C3ibkef5rO2jevCdawkAIZiaVENfRyFt9zxfqUED6B1nOBZDK6YWRM-uCCBxYXNSuCwN1o76rEV8OXeI3dCENZ1FLJvlVCXif7lRC" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+		<!-- Sobre Mí -->
+		<section class="py-24 px-6" id="about">
+			<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+				<div class="order-2 md:order-1">
+					<div
+						class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold uppercase tracking-widest mb-6">
+						<span class="material-symbols-outlined text-sm">person</span> Sobre Mí
+					</div>
+					<h2 class="text-4xl font-headline font-bold text-white mb-8">Arquitectura de Software con Propósito</h2>
+					<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+						<p>No solo escribo código; construyo infraestructuras digitales escalables que resuelven problemas reales de
+							negocio. Mi enfoque combina la precisión técnica con una visión estratégica orientada al crecimiento.</p>
+						<p>Como desarrollador, mantengo una mentalidad de aprendizaje continuo, integrando las últimas tecnologías
+							para asegurar que cada proyecto sea moderno, eficiente y esté preparado para el futuro.</p>
+					</div>
+				</div>
+				<div class="order-1 md:order-2 flex justify-center">
+					<div class="bg-surface-container-high p-4 rounded-[2rem] transform rotate-3 max-w-xs">
+						<img alt="Portrait of the Developer"
+							class="w-full aspect-[4/5] object-cover rounded-[1.5rem] grayscale hover:grayscale-0 transition-all duration-500"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuARRyudfatNf-3FgEyxXtLEqKCIWVVLW5sIzVceUIpn9aczQ7hTaMuEo_hQpq6XuNV_2dkMs5nUBfp4SXZgPZKoDRblApFw74y_SG9Z09GeiNWalfyagF55A-8MOsoNXoMmtvlKINzdsfSXDGXjNkWK31bL-w4HlEhp9egRBHJTxtXu0LRhFWdCptPjNJ8pyK6F5gDk7EX2Bt_XRJC8037-b9A_i5uMJLqTZ24GNhhT2rnI3i7jkFWrFIlwV5qleTFhOjb7D7Udlnak" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Servicios -->
+		<section class="py-24 px-6 bg-surface-container-low/30" id="services">
+			<div class="max-w-7xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-6">Servicios Especializados</h2>
+					<p class="text-on-surface-variant max-w-2xl mx-auto">Soluciones integrales diseñadas para elevar la presencia
+						y eficiencia de tu marca en el entorno digital.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Servicio 1 -->
+					<div
+						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
+						<div
+							class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+							<span class="material-symbols-outlined text-3xl">web</span>
+						</div>
+						<h3 class="text-2xl font-bold text-white mb-4">Desarrollo de Páginas Web</h3>
+						<p class="text-on-surface-variant mb-6 font-light">Interfaces modernas, responsivas y optimizadas para SEO
+							que cautivan a tu audiencia desde el primer segundo.</p>
+						<ul class="space-y-3">
+							<li class="flex items-center gap-2 text-sm text-primary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> Responsive Design</li>
+							<li class="flex items-center gap-2 text-sm text-primary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> SEO Estratégico</li>
+						</ul>
+					</div>
+					<!-- Servicio 2 -->
+					<div
+						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-secondary/30 transition-all group">
+						<div
+							class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary mb-8 group-hover:scale-110 transition-transform">
+							<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+						</div>
+						<h3 class="text-2xl font-bold text-white mb-4">Automatización de Procesos</h3>
+						<p class="text-on-surface-variant mb-6 font-light">Sistemas de reserva, flujos de trabajo automáticos y
+							herramientas que te devuelven el tiempo que tu negocio necesita.</p>
+						<ul class="space-y-3">
+							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> Booking Systems</li>
+							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> API Integration</li>
+						</ul>
+					</div>
+					<!-- Servicio 3 -->
+					<div
+						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-tertiary/30 transition-all group">
+						<div
+							class="w-16 h-16 bg-tertiary/10 rounded-2xl flex items-center justify-center text-tertiary mb-8 group-hover:scale-110 transition-transform">
+							<span class="material-symbols-outlined text-3xl">hub</span>
+						</div>
+						<h3 class="text-2xl font-bold text-white mb-4">Sistemas Web Personalizados</h3>
+						<p class="text-on-surface-variant mb-6 font-light">Soluciones a medida para necesidades empresariales
+							complejas. Si puedes imaginarlo, puedo programarlo.</p>
+						<ul class="space-y-3">
+							<li class="flex items-center gap-2 text-sm text-tertiary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> Custom CRM/ERP</li>
+							<li class="flex items-center gap-2 text-sm text-tertiary/80"><span
+									class="material-symbols-outlined text-sm">check_circle</span> Scalable Architecture</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Proyectos - Updated with 5 specific items -->
+		<section class="py-24 px-6" id="projects">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-4xl font-headline font-bold text-white mb-16">Proyectos Destacados</h2>
+				<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+					<!-- Project 1: Barberia (Large) -->
+					<div
+						class="md:col-span-8 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
+						<div class="h-64 md:h-80 relative overflow-hidden">
+							<img alt="Barber Shop Booking System"
+								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk5rz9Rsa67cJrVGKYm0UaN7CDVyiV_vpvZALQ51gWHCrrdNTGVXdh4Nb0pUsEJBpRDZv8ov5QSSPJQm725Vot8O26g3wC5H1MU0xdoBzt5IIHUA2nYzn4zds5iOeRphf8MqylYLTR-X_uJVOTp6d4-zR-jzFUYWq1dTYbzhqxFjMRlwPzEagJfGHZ4KZjhTqT7mlLyWq3jmzMuT8oH_g5ZPrLfKWdaop-PkgeiRfYD4pe8vSYFV1GHYffF14Qq0snkSQR7Ys6x1OR" />
+							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+						</div>
+						<div class="p-8">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-2xl font-bold text-white">Barberia Elite: Sistema de Reservas</h3>
+								<div class="flex gap-2">
+									<span
+										class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">React</span>
+									<span
+										class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Firebase</span>
+								</div>
+							</div>
+							<p class="text-on-surface-variant mb-6">Plataforma integral con gestión de turnos en tiempo real, perfiles
+								de barberos y recordatorios automáticos por WhatsApp que redujo las ausencias en un 40%.</p>
+						</div>
+					</div>
+					<!-- Project 2: Salon de belleza -->
+					<div
+						class="md:col-span-4 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
+						<div class="h-64 relative overflow-hidden">
+							<img alt="Beauty Salon Website"
+								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmU38EkKD9_Wz05NcTePLAoUF8Ly7jDG4ocbeqsrxAS9z65b7kBlcOF-x-N-ervZk1uIbWLMV4QCRBFuVpTtEz6YNXCQKbB85uk9WaeuoTOMUiied-ZvjA_ryUiI8MvCpeZSZ5LcvSig5RSWUDafRT6yq3R3Vj2a6v9PppTieum__ZZCM0bZCjg5FNUm6UnmUVSMKoFbtkr24y4u08qQye-m486aR5sJHrlmZBGbpUF3FRhZDl0PxOAbtBwqIdA8IokWoog_urwG3K" />
+							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+						</div>
+						<div class="p-8">
+							<h3 class="text-xl font-bold text-white mb-2">Salón Glamour: E-commerce</h3>
+							<p class="text-on-surface-variant text-sm mb-4">Tienda online y catálogo de servicios con pasarela de
+								pagos integrada y gestión de inventario de productos.</p>
+							<div class="flex gap-2">
+								<span
+									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Next.js</span>
+								<span
+									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Stripe</span>
+							</div>
+						</div>
+					</div>
+					<!-- Project 3: Nail Salon -->
+					<div
+						class="md:col-span-4 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
+						<div class="h-64 relative overflow-hidden">
+							<img alt="Nail Salon Management"
+								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNPwWspFsMPcOHOdlwOe-ARUwRV_3i6fQiCda-JBnLyIQ9W0ehOllwOnDF27FmIT1kZoxsZy6Gu3wSytZum4KMz_1nUWX1b7YiJa2SMGF_BOLvDgr71GQ-8_hrDIDRgseiHL97ID7P2VCu3nopKOnAvWnWCP6Zop2Qm26x6bZrTi1gmgbCOxiA5luDN87VnFrobUlVh3OUnif-gzhcFU9elfdJgyKMsFlhO60B8_bvCEcn5Ph_AsVvjVVMpLd2R1AYg5AzQQCqxwi" />
+							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+						</div>
+						<div class="p-8">
+							<h3 class="text-xl font-bold text-white mb-2">Nail Art Studio: CRM</h3>
+							<p class="text-on-surface-variant text-sm mb-4">Gestión de clientes y fidelización con sistema de puntos y
+								galería de trabajos interactiva.</p>
+							<div class="flex gap-2">
+								<span
+									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Vue.js</span>
+								<span
+									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Supabase</span>
+							</div>
+						</div>
+					</div>
+					<!-- Project 4: Dentista & Laboratorio Clinico (Large Horizontal) -->
+					<div
+						class="md:col-span-8 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10 flex flex-col md:row-span-1">
+						<div class="h-64 relative overflow-hidden">
+							<img alt="Medical Systems"
+								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6m_z2_3wyUC6SFko_VVnF5e-LfqSuvmRumC6MWzoR_FG-LORJtcVMgaX9uR9Vin1vHD7J6LoZ0yzQwNSEEgodyEyYfeNEfhT_mhK4q6hHpY1E3lkUdVQgDjDtvYQooBQrk7GQDhxbOKhXiEXMNxJFrBgu79EsqystXxljGGfWoaijeKMMzC86x6cz892o7rDjj8zBX3CiZay2v1LEqzX9xrIcnepy75Pj8rh9SzE0a6i4IArCzgsUHnDmP6D-C2cgRDDvmZ-ReY8N" />
+							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+						</div>
+						<div class="p-8">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-2xl font-bold text-white">DentalSync: Software Clínico</h3>
+								<div class="flex gap-2">
+									<span
+										class="bg-secondary/10 text-secondary border border-secondary/20 px-4 py-1 rounded-full text-xs font-bold">Node.js</span>
+									<span
+										class="bg-secondary/10 text-secondary border border-secondary/20 px-4 py-1 rounded-full text-xs font-bold">PostgreSQL</span>
+								</div>
+							</div>
+							<p class="text-on-surface-variant mb-6">Módulo dental avanzado para historias clínicas digitales,
+								odontogramas interactivos y facturación electrónica automatizada.</p>
+						</div>
+					</div>
+					<!-- Project 5: Laboratorio clinico (Bottom Row) -->
+					<div
+						class="md:col-span-12 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10 flex flex-col md:flex-row">
+						<div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+							<img alt="Clinical Laboratory Portal"
+								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS08Fu08OgQgrrnkpd0zrOEefQLfhUnW1jykkVWJ6q6-YY_-RtOXuWx2SfpYwIRnr1lvplygd7K-zB1eZ828AH75DRTKl6BRjphi3KNk7HoIqnJOmmHLbXDVS-96cvwf8Lp7L0nyTxgoLcpda5NnJH5GeRQ-FsXA9CrrrkqDkiVXZTfqoaeSnGrUPi_HX3UuccOLPkncFuTiTqg-0j2R_WJ7vu5ZeVrmYlXsaUrPaqJm80xkTUyPairavVqqvXnmKUTXLtiuEBJb4N" />
+							<div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container-low hidden md:block">
+							</div>
+						</div>
+						<div class="md:w-1/2 p-10 flex flex-col justify-center">
+							<h3 class="text-3xl font-bold text-white mb-4">LabPortal: Resultados Online</h3>
+							<p class="text-on-surface-variant text-lg mb-8">Sistema seguro de entrega de resultados clínicos cifrados,
+								permitiendo a los pacientes descargar sus análisis y ver el historial de salud desde cualquier
+								dispositivo.</p>
+							<div class="flex gap-3">
+								<span
+									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">React
+									Native</span>
+								<span
+									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">AWS
+									S3</span>
+								<span
+									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">Python</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Tecnologías -->
+		<section class="py-24 px-6 overflow-hidden">
+			<div class="max-w-7xl mx-auto">
+				<div class="flex flex-col md:flex-row items-center justify-between gap-12">
+					<div class="max-w-md">
+						<h2 class="text-3xl font-headline font-bold text-white mb-4">Stack Tecnológico</h2>
+						<p class="text-on-surface-variant">Herramientas de vanguardia para garantizar el máximo rendimiento.</p>
+					</div>
+					<div class="grid grid-cols-3 md:grid-cols-5 gap-8 items-center">
+						<div class="flex flex-col items-center gap-3 group">
+							<div
+								class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<img alt="HTML5" class="w-8 h-8"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuCANvaOBxTTKdNzUEinK5mkewqsi-ZHqs08bHWXdPZPavUh4MnFznwWOkleZRmrSmOUdjM2O9SbvO_dhrHeKkI4O-J9_0TfZxccAb_Rq05tFArjZ6WWi9KVCH2AOcmqf067nccpbvjT0V9VGmy4PdO6ozeAG7xCE7l5ZMRCLnuKVK-chuSa98ILKMD29I_tCAWS3L-5y9CEclG0Y6ovQa_mHvDy1I0qm6C61lkG8l31U1THLzL7plxs2vkwKWBge8sKQSJ_Epy6Fryn" />
+							</div>
+							<span
+								class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">HTML</span>
+						</div>
+						<div class="flex flex-col items-center gap-3 group">
+							<div
+								class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<img alt="CSS3" class="w-8 h-8"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0L-AZwjBDdM45xS8Eupsm2t2J0o4U8ci8ToBm9h_ZWR6xXhqmOC1FykCCR-CuyLBaKLEpSI22V_83obbBAOpdTRi1IiCMZg19AwEr0t3On56lrTsI7xYJNqwRdARX8NBufUELzdTGtwlI0nxmIqnbl9dOgqJCno-DsQ299WrDD-NEdgE5hdfj56kJUjWnzxzBaDImCx07USrgbs6w47COkTK4KP7mLHlUIOM38o0Aw8pURpB4Z07Vv99x3aOMKhdQelSsm4GFVjnm" />
+							</div>
+							<span
+								class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">CSS</span>
+						</div>
+						<div class="flex flex-col items-center gap-3 group">
+							<div
+								class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<img alt="JavaScript" class="w-8 h-8"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyOImmjMmQLovB1rDoOf3TIP0Koagpn68Q4S6l8v96_BLMMpauLHMVNj4PHOII7gVt8i0giEJXCtFCoDCwk449ztMqH-Tf9Bx3IuqSjEAFyxwYzwNIwbEGJb40zsN_jD_hEew_sP2OLTFMKnCpYR5sXnQnH48Tbl3b9fmuhIRfj_n1amPr5Xaxc1U5JBYGFcojjNLyaiZmqrpHV8Riy-M7EIXNs8DK42GuIJkzxfxl7W7b1p4qJXdFwf64smxVoWvN996_ECFMoYBt" />
+							</div>
+							<span
+								class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">JS</span>
+						</div>
+						<div class="flex flex-col items-center gap-3 group">
+							<div
+								class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<img alt="React" class="w-8 h-8"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-7fAidbaQhsr3Vqsw4ONIWaskh3rVQziwOKIF9sOyqaPPEhUq6YMwCXYXeMB2qTij5yvTInl3_fsmI6XtxsKjQAWuFvdUvVbox8aQ-mNvtxWQC851ao-hQcDZX39O6Ae6BWOQd0LvCRPY4UGij6_bVBsSGbLhcBIMhYtVINuHINUKPRepDEPGVjvGDBSHsmnJwiKlcLY6YjoWI1Rda9ch0lfykoB5Lfqm6FKUR72QKRnordrTdNIRIMZu4-vtVRa2HgZR9eDj5T9g" />
+							</div>
+							<span
+								class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">REACT</span>
+						</div>
+						<div class="flex flex-col items-center gap-3 group">
+							<div
+								class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<img alt="Node.js" class="w-8 h-8"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4RmfdU03YXhJKeBs1Ur7Oy01E44buI5EoV0L2sl430DgNx7A6rthhlzhVtIdPs-qF0gw9QQMiTunxcrTOuWMStTBdXExdWWppU2dSjbzAeuDXQX_7bTGrXuGOxbCfc7zBMAeCl4tLc3jzpXwln643kQqDMvwxbe5TWu1PHK1vC6wObowJEA9zWzFOCconXI-MKZc06paxrtfGJXvI3lEhgh_tPNdKBH38y1Uh_tWQQHUqb0N6hwvsufQKZoSVczVc6iZGYWFV6bQR" />
+							</div>
+							<span
+								class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">NODE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Formación y Cursos -->
+		<section class="py-24 px-6 bg-surface-container-lowest">
+			<div class="max-w-7xl mx-auto">
+				<div class="mb-16">
+					<h2 class="text-4xl font-headline font-bold text-white">Formación y Cursos</h2>
+				</div>
+				<div class="space-y-4">
+					<div
+						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
+						<div class="flex items-center gap-6">
+							<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+								<span class="material-symbols-outlined">school</span>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-white">Certificación Full Stack Developer</h3>
+								<p class="text-on-surface-variant text-sm">Avanzado • Plataforma de Aprendizaje Tech</p>
+							</div>
+						</div>
+						<span
+							class="text-xs font-bold text-primary px-4 py-2 bg-primary/5 rounded-full border border-primary/20">COMPLETADO</span>
+					</div>
+					<div
+						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
+						<div class="flex items-center gap-6">
+							<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+								<span class="material-symbols-outlined">psychology</span>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-white">Arquitectura de Sistemas y Escalabilidad</h3>
+								<p class="text-on-surface-variant text-sm">Especialización • Instituto Internacional</p>
+							</div>
+						</div>
+						<span
+							class="text-xs font-bold text-secondary px-4 py-2 bg-secondary/5 rounded-full border border-secondary/20">EN
+							CURSO</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contacto -->
+		<section class="py-32 px-6 relative overflow-hidden" id="contact">
+			<div
+				class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 blur-[120px] rounded-full -z-10">
+			</div>
+			<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+				<div>
+					<h2 class="text-5xl font-headline font-bold text-white mb-8">¿Tienes un proyecto en mente?</h2>
+					<p class="text-xl text-on-surface-variant mb-12">Hablemos sobre cómo puedo ayudarte a llevar tu negocio al
+						siguiente nivel con soluciones tecnológicas eficientes.</p>
+					<div class="space-y-6">
+						<a class="flex items-center gap-6 group" href="mailto:hola@architect.dev">
+							<div
+								class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+								<span class="material-symbols-outlined text-primary">mail</span>
+							</div>
+							<div>
+								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Email</p>
+								<p class="text-xl text-white">hola@architect.dev</p>
+							</div>
+						</a>
+						<a class="flex items-center gap-6 group" href="#">
+							<div
+								class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+								<span class="material-symbols-outlined text-secondary">chat</span>
+							</div>
+							<div>
+								<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">WhatsApp</p>
+								<p class="text-xl text-white">+34 000 000 000</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="bg-surface-container-low p-10 rounded-[2.5rem] border border-outline-variant/10 shadow-2xl">
+					<form class="space-y-6">
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<div class="space-y-2">
+								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Nombre</label>
+								<input
+									class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
+									placeholder="Tu nombre" type="text" />
+							</div>
+							<div class="space-y-2">
+								<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Email</label>
+								<input
+									class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
+									placeholder="tu@email.com" type="email" />
+							</div>
+						</div>
+						<div class="space-y-2">
+							<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Mensaje</label>
+							<textarea
+								class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-5 py-4 text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary/50 placeholder:text-on-surface-variant/30"
+								placeholder="Cuéntame sobre tu proyecto..." rows="4"></textarea>
+						</div>
+						<button
+							class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-5 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95"
+							type="submit">
+							Enviar Mensaje
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<footer class="bg-slate-900 border-t border-outline-variant/10">
+		<div class="flex flex-col md:flex-row justify-between items-start px-12 py-20 gap-8 max-w-7xl mx-auto">
+			<div class="flex flex-col">
+				<div class="text-lg font-black text-slate-50 mb-4 font-headline">Architect.Dev</div>
+				<p class="font-manrope text-sm text-slate-400 max-w-xs">
+					Transformando ideas en infraestructuras digitales de alto rendimiento.
+				</p>
+			</div>
+			<div class="flex gap-12">
+				<div class="flex flex-col gap-4">
+					<span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Connect</span>
+					<a class="font-manrope text-sm text-slate-400 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100"
+						href="#">Email</a>
+					<a class="font-manrope text-sm text-slate-400 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100"
+						href="#">WhatsApp</a>
+				</div>
+				<div class="flex flex-col gap-4">
+					<span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Dev</span>
+					<a class="font-manrope text-sm text-slate-400 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100"
+						href="#">GitHub</a>
+					<a class="font-manrope text-sm text-slate-400 hover:text-emerald-400 transition-colors opacity-80 hover:opacity-100"
+						href="#">LinkedIn</a>
+				</div>
+			</div>
+		</div>
+		<div class="max-w-7xl mx-auto px-12 pb-12">
+			<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+				<p class="font-manrope text-sm text-slate-400">© 2024 Architectural Architect. Built with technical precision.
+				</p>
+				<div class="flex gap-6 text-xs text-slate-500">
+					<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+					<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
