@@ -24,6 +24,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
 		rel="stylesheet" />
+
 	<script id="tailwind-config">
 		tailwind.config = {
 			darkMode: "class",
@@ -137,555 +138,1349 @@
 			</a>
 			<div class="hidden md:flex items-center gap-8">
 				<a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
-					href="#hero">Home</a>
+					href="#hero">Inicio</a>
 				<!-- <a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
 					href="#about">About</a> -->
 				<a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
-					href="#services">Services</a>
+					href="#servicios">Servicios</a>
 				<a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
-					href="#projects">Projects</a>
+					href="#proyectos">Proyectos</a>
+				<a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
+					href="#proceso">Proceso</a>
+				<a class="font-manrope tracking-tight font-semibold text-cyan-400 hover:text-slate-100 hover:border-b-2 border-slate-100 hover:pb-1 transition-all"
+					href="#faq">FAQ</a>
 			</div>
-			<a href="#contact"
+			<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20quiero%20que%20mi%20negocio%20sea%20el%20siguiente.%20%C2%BFAgendamos%20una%20llamada%3F"
+				target="_blank"
 				class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">
 				Contact
 			</a>
 		</div>
 	</nav>
 	<main>
-		<!-- Hero Section - Reduced Vertical Spacing -->
-		<section id="hero" class="relative min-h-[700px] flex items-center px-6 overflow-hidden mt-4">
-			<div class="absolute inset-0 z-0">
-				<div class="absolute top-1/4 -right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
-				<div class="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[120px]"></div>
-			</div>
-			<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-12">
-				<div class="lg:col-span-7">
-					<h1 class="text-5xl md:text-6xl font-extrabold font-headline leading-tight tracking-tight text-white mb-6">
-						Desarrollador Web | <span
-							class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Creo soluciones
-							digitales</span> para tu negocio
+		<!-- HERO SECTION -->
+		<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950">
+
+			<!-- Fondo con gradiente sutil -->
+			<div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950"></div>
+
+			<!-- Partículas decorativas -->
+			<div class="absolute top-20 left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl"></div>
+			<div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl"></div>
+
+			<div class="relative z-10 max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+				<!-- Columna izquierda: Copy -->
+				<div class="flex flex-col gap-6">
+
+					<!-- Etiqueta superior -->
+					<div class="flex items-center gap-2 w-fit">
+						<span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+						<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+							Desarrollo Web · Automatización · Sistemas
+						</span>
+					</div>
+
+					<!-- Headline principal -->
+					<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+						Tu negocio merece una
+						<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+							agenda que trabaje sola.
+						</span>
 					</h1>
-					<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 font-light leading-relaxed">
-						Especializado en automatización, páginas modernas y sistemas web personalizados que impulsan tu crecimiento.
+
+					<!-- Subheadline -->
+					<p class="text-gray-400 text-lg sm:text-xl leading-relaxed max-w-xl">
+						Diseño sistemas de reservas, páginas web y automatizaciones para
+						<strong class="text-gray-200">barberías, estéticas, clínicas y negocios de citas</strong>
+						que quieren crecer sin depender de llamadas ni grupos de WhatsApp.
 					</p>
-					<div class="flex flex-wrap gap-4">
-						<a href="https://wa.me/525525184112?text=Hola,%20vi%20tu%20p%C3%A1gina%20y%20me%20interesa%20crear%20una%20p%C3%A1gina%20o%20sistema%20para%20mi%20negocio.%20%C2%BFMe%20puedes%20dar%20informaci%C3%B3n?"
-							target="_blank"
-							class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(76,214,255,0.3)] transition-all">
-							Contactar por WhatsApp
+
+					<!-- Beneficios rápidos -->
+					<ul class="flex flex-col gap-3 mt-2">
+						<li class="flex items-center gap-3 text-gray-300 text-sm">
+							<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+							Menos citas perdidas, más ingresos garantizados
+						</li>
+						<li class="flex items-center gap-3 text-gray-300 text-sm">
+							<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+							Recordatorios automáticos por WhatsApp para tus clientes
+						</li>
+						<li class="flex items-center gap-3 text-gray-300 text-sm">
+							<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+							Sistema listo en menos de 2 semanas
+						</li>
+					</ul>
+
+					<!-- CTAs -->
+					<div class="flex flex-col sm:flex-row gap-4 mt-4">
+
+						<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20automatizar%20las%20reservas%20de%20mi%20negocio.%20%C2%BFMe%20puedes%20dar%20m%C3%A1s%20informaci%C3%B3n%3F"
+							target="_blank" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6
+						py-3 rounded-xl transition-all duration-200 shadow-lg shadow-blue-600/25">
+							<span class="material-symbols-outlined text-base">chat</span>
+							Quiero automatizar mi negocio
 						</a>
-						<a class="bg-surface-container-highest border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-variant transition-colors"
-							href="#projects">
-							Ver Proyectos
+
+						<a href="#projects" class="flex items-center justify-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-300
+						hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200">
+							<span class="material-symbols-outlined text-base">visibility</span>
+							Ver proyectos
 						</a>
 					</div>
+
 				</div>
-				<!-- Smaller Profile Image Container -->
-				<div class="lg:col-span-5 hidden lg:block">
-					<div class="relative group max-w-sm mx-auto">
-						<div
-							class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000">
+
+				<!-- Columna derecha: Tarjeta visual -->
+				<div class="hidden lg:flex justify-center items-center">
+					<div class="relative bg-gray-900 border border-gray-800 rounded-2xl p-6 w-full max-w-sm shadow-2xl">
+
+						<!-- Header tarjeta -->
+						<div class="flex items-center justify-between mb-6">
+							<span class="text-white font-semibold text-sm">Agenda del día</span>
+							<span class="text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded-full">● En vivo</span>
 						</div>
+
+						<!-- Citas simuladas -->
+						<div class="flex flex-col gap-3">
+							<div class="flex items-center gap-3 bg-gray-800/60 rounded-xl p-3">
+								<div class="w-8 h-8 rounded-full bg-blue-600/20 flex items-center justify-center">
+									<span class="material-symbols-outlined text-blue-400 text-sm">content_cut</span>
+								</div>
+								<div class="flex-1">
+									<p class="text-white text-xs font-medium">Carlos M. — Corte + Barba</p>
+									<p class="text-gray-500 text-xs">10:00 AM · Confirmado ✓</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-3 bg-gray-800/60 rounded-xl p-3">
+								<div class="w-8 h-8 rounded-full bg-indigo-600/20 flex items-center justify-center">
+									<span class="material-symbols-outlined text-indigo-400 text-sm">spa</span>
+								</div>
+								<div class="flex-1">
+									<p class="text-white text-xs font-medium">Laura G. — Limpieza facial</p>
+									<p class="text-gray-500 text-xs">11:30 AM · Recordatorio enviado ✓</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-3 bg-gray-800/60 rounded-xl p-3">
+								<div class="w-8 h-8 rounded-full bg-emerald-600/20 flex items-center justify-center">
+									<span class="material-symbols-outlined text-emerald-400 text-sm">medical_services</span>
+								</div>
+								<div class="flex-1">
+									<p class="text-white text-xs font-medium">Ana R. — Consulta dental</p>
+									<p class="text-gray-500 text-xs">01:00 PM · Confirmado ✓</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer tarjeta -->
+						<div class="mt-6 pt-4 border-t border-gray-800 flex justify-between text-xs text-gray-500">
+							<span>3 citas hoy</span>
+							<span class="text-green-400">0 cancelaciones</span>
+						</div>
+
+						<!-- Burbuja de notificación flotante -->
 						<div
-							class="relative bg-surface-container-low rounded-2xl overflow-hidden aspect-square flex items-center justify-center p-6">
-							<img alt="Technical Code Interface"
-								class="w-full h-full object-cover rounded-xl opacity-80 group-hover:scale-105 transition-transform duration-700"
-								src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhct3jo2tBNjBKbzYzx2-ckOOMeOGMDWDyW901Xbrh3yqYS4ecPjkx-jZJktJbHuAG3_-YC1VNX1mG9AHKl-Q0xfbjyEs_wYUkJw4-d1Zr2hzo-Op44J-zrDA8i9B95lcpdTy2UmIFIzLL9g8MOSq0qtVggGTL742YogZ0_6C3ibkef5rO2jevCdawkAIZiaVENfRyFt9zxfqUED6B1nOBZDK6YWRM-uCCBxYXNSuCwN1o76rEV8OXeI3dCENZ1FLJvlVCXif7lRC" />
+							class="absolute -top-3 -right-3 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-bounce">
+							+1 reserva nueva
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</section>
+
 		<!-- Separation -->
 		<div class="max-w-7xl mx-auto px-12">
 			<div class="gradient-line"></div>
 		</div>
-		<!-- Sobre Mí -->
-		<!-- <section class="py-24 px-6" id="about">
-			<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-				<div class="order-2 md:order-1">
-					<div
-						class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold uppercase tracking-widest mb-6">
-						<span class="material-symbols-outlined text-sm">person</span> Sobre Mí
-					</div>
-					<h2 class="text-4xl font-headline font-bold text-white mb-8">Arquitectura de Software con Propósito</h2>
-					<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
-						<p>No solo escribo código; construyo infraestructuras digitales escalables que resuelven problemas reales de
-							negocio. Mi enfoque combina la precisión técnica con una visión estratégica orientada al crecimiento.</p>
-						<p>Como desarrollador, mantengo una mentalidad de aprendizaje continuo, integrando las últimas tecnologías
-							para asegurar que cada proyecto sea moderno, eficiente y esté preparado para el futuro.</p>
-					</div>
-				</div>
-				<div class="order-1 md:order-2 flex justify-center">
-					<div class="bg-surface-container-high p-4 rounded-[2rem] transform rotate-3 max-w-xs">
-						<img alt="Portrait of the Developer"
-							class="w-full aspect-[4/5] object-cover rounded-[1.5rem] grayscale hover:grayscale-0 transition-all duration-500"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuARRyudfatNf-3FgEyxXtLEqKCIWVVLW5sIzVceUIpn9aczQ7hTaMuEo_hQpq6XuNV_2dkMs5nUBfp4SXZgPZKoDRblApFw74y_SG9Z09GeiNWalfyagF55A-8MOsoNXoMmtvlKINzdsfSXDGXjNkWK31bL-w4HlEhp9egRBHJTxtXu0LRhFWdCptPjNJ8pyK6F5gDk7EX2Bt_XRJC8037-b9A_i5uMJLqTZ24GNhhT2rnI3i7jkFWrFIlwV5qleTFhOjb7D7Udlnak" />
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!-- Servicios -->
-		<section class="py-24 px-6 bg-surface-container-low/30" id="services">
-			<div class="max-w-7xl mx-auto">
+
+		<!-- SECCIÓN: ¿TE PASA ESTO? -->
+		<section id="problema" class="bg-gray-950 py-24 px-6">
+			<div class="max-w-6xl mx-auto">
+
+				<!-- Encabezado -->
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-6">Servicios Especializados</h2>
-					<p class="text-on-surface-variant max-w-2xl mx-auto">Soluciones integrales diseñadas para elevar la presencia
-						y eficiencia de tu marca en el entorno digital.</p>
+					<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+						El problema
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">
+						¿Te suena familiar alguna de estas situaciones?
+					</h2>
+					<p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+						La mayoría de negocios de citas siguen perdiendo tiempo y dinero por las mismas razones.
+					</p>
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<!-- Servicio 1 -->
+
+				<!-- Grid de problemas -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+
+					<!-- Problema 1 -->
 					<div
-						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
-						<div
-							class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
-							<span class="material-symbols-outlined text-3xl">web</span>
+						class="group bg-gray-900 border border-gray-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+							<span class="material-symbols-outlined text-red-400">forum</span>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">Desarrollo de Páginas Web</h3>
-						<p class="text-on-surface-variant mb-6 font-light">
-							Páginas web modernas, rápidas y optimizadas que
-							transmiten confianza y convierten visitantes en clientes desde el primer momento.
+						<h3 class="text-white font-semibold text-base mb-2">
+							Tu agenda vive en un grupo de WhatsApp
+						</h3>
+						<p class="text-gray-500 text-sm leading-relaxed">
+							Confirmar citas manualmente, responder mensajes a toda hora y aun así tener clientes que no aparecen.
 						</p>
-						<ul class="space-y-3">
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Diseño mobile y escritorio</li>
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Optimización SEO</li>
+					</div>
+
+					<!-- Problema 2 -->
+					<div
+						class="group bg-gray-900 border border-gray-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+							<span class="material-symbols-outlined text-red-400">event_busy</span>
+						</div>
+						<h3 class="text-white font-semibold text-base mb-2">
+							Citas canceladas a último momento
+						</h3>
+						<p class="text-gray-500 text-sm leading-relaxed">
+							Sin recordatorios automáticos, los clientes olvidan o cancelan tarde. Eso es tiempo y dinero directo a la
+							basura.
+						</p>
+					</div>
+
+					<!-- Problema 3 -->
+					<div
+						class="group bg-gray-900 border border-gray-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+							<span class="material-symbols-outlined text-red-400 text-[20px] leading-none">devices_off</span>
+						</div>
+						<h3 class="text-white font-semibold text-base mb-2">
+							Clientes que no regresan
+						</h3>
+						<p class="text-gray-500 text-sm leading-relaxed">
+							Sin seguimiento ni fidelización, los clientes se van a la competencia. No por precio, sino porque nadie
+							los recordó.
+						</p>
+					</div>
+
+					<!-- Problema 4 -->
+					<div
+						class="group bg-gray-900 border border-gray-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+							<span class="material-symbols-outlined text-red-400 text-[20px]">devices_off</span>
+						</div>
+						<h3 class="text-white font-semibold text-base mb-2">
+							No tienes presencia digital real
+						</h3>
+						<p class="text-gray-500 text-sm leading-relaxed">
+							Un perfil de Instagram no es suficiente. Tus clientes potenciales te buscan en Google y no te encuentran.
+						</p>
+					</div>
+
+					<!-- Problema 5 -->
+					<div
+						class="group bg-gray-900 border border-gray-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-4">
+							<span class="material-symbols-outlined text-red-400">schedule</span>
+						</div>
+						<h3 class="text-white font-semibold text-base mb-2">
+							Pierdes horas en tareas que se pueden automatizar
+						</h3>
+						<p class="text-gray-500 text-sm leading-relaxed">
+							Confirmar, recordar, cobrar, reagendar... Todo eso puede hacerlo un sistema mientras tú atiendes a tus
+							clientes.
+						</p>
+					</div>
+
+					<!-- Problema 6 — CTA disfrazado -->
+					<div
+						class="bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/30 rounded-2xl p-6 flex flex-col justify-between">
+						<div>
+							<div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4">
+								<span class="material-symbols-outlined text-blue-400">lightbulb</span>
+							</div>
+							<h3 class="text-white font-semibold text-base mb-2">
+								¿Reconoces alguno de estos problemas?
+							</h3>
+							<p class="text-gray-400 text-sm leading-relaxed">
+								Tienen solución. Hablemos 15 minutos y te digo exactamente qué necesita tu negocio.
+							</p>
+						</div>
+
+						<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20me%20identifico%20con%20varios%20de%20los%20problemas%20que%20mencionas.%20%C2%BFPodemos%20hablar%3F"
+							target="_blank"
+							class="mt-6 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-3 rounded-xl transition-all duration-200">
+							<span class="material-symbols-outlined text-base">chat</span>
+							Hablemos gratis 15 min
+						</a>
+					</div>
+
+				</div>
+
+				<!-- Línea de transición hacia solución -->
+				<div class="text-center">
+					<p class="text-gray-500 text-sm">
+						Si dijiste <span class="text-white font-medium">"sí"</span> a al menos uno —
+						<span class="text-blue-400 font-medium">sigue leyendo.</span>
+					</p>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
+		<!-- SECCIÓN: SERVICIOS -->
+		<section id="services" class="bg-gray-900 py-24 px-6">
+			<div class="max-w-6xl mx-auto">
+
+				<!-- Encabezado -->
+				<div class="text-center mb-16">
+					<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+						Lo que hago
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">
+						Soluciones hechas para negocios de citas
+					</h2>
+					<p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+						No vendo tecnología. Vendo tiempo recuperado, clientes que regresan y una agenda que se llena sola.
+					</p>
+				</div>
+
+				<!-- Servicio 1 — Grande, destacado -->
+				<div
+					class="bg-gray-950 border border-gray-800 rounded-2xl p-8 mb-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center hover:border-blue-500/40 transition-all duration-300">
+					<div>
+						<div class="flex items-center gap-3 mb-4">
+							<div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+								<span class="material-symbols-outlined text-blue-400">calendar_month</span>
+							</div>
+							<span class="text-blue-400 text-sm font-medium">Servicio estrella</span>
+						</div>
+						<h3 class="text-white text-2xl font-bold mb-3">
+							Sistema de Reservas Automático
+						</h3>
+						<p class="text-gray-400 leading-relaxed mb-6">
+							Tu cliente entra a tu página, elige su servicio, selecciona horario y confirma su cita — sin que tú
+							intervengas. Recibe recordatorios automáticos por WhatsApp y reduce cancelaciones desde el primer día.
+						</p>
+						<ul class="flex flex-col gap-3">
+							<li class="flex items-center gap-3 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+								Reservas 24/7 sin intervención manual
+							</li>
+							<li class="flex items-center gap-3 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+								Recordatorios automáticos por WhatsApp
+							</li>
+							<li class="flex items-center gap-3 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+								Panel de administración para gestionar tu agenda
+							</li>
+							<li class="flex items-center gap-3 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-blue-400 text-base">check_circle</span>
+								Compatible con cualquier negocio de citas
+							</li>
 						</ul>
 					</div>
+
+					<!-- Visual derecho -->
+					<div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
+						<div class="flex items-center justify-between mb-4">
+							<span class="text-white text-sm font-semibold">Nueva reserva</span>
+							<span class="text-xs text-green-400 bg-green-400/10 px-2 py-1 rounded-full">● Confirmada</span>
+						</div>
+						<div class="flex flex-col gap-3">
+							<div class="bg-gray-800 rounded-lg p-3 flex items-center gap-3">
+								<span class="material-symbols-outlined text-blue-400 text-sm">person</span>
+								<div>
+									<p class="text-white text-xs font-medium">Miguel Torres</p>
+									<p class="text-gray-500 text-xs">Corte + Barba · Hoy 3:00 PM</p>
+								</div>
+							</div>
+							<div class="bg-gray-800 rounded-lg p-3 flex items-center gap-3">
+								<span class="material-symbols-outlined text-green-400 text-sm">notifications_active</span>
+								<div>
+									<p class="text-white text-xs font-medium">Recordatorio enviado</p>
+									<p class="text-gray-500 text-xs">WhatsApp · 2 horas antes ✓</p>
+								</div>
+							</div>
+							<div class="bg-gray-800 rounded-lg p-3 flex items-center gap-3">
+								<span class="material-symbols-outlined text-indigo-400 text-sm">star</span>
+								<div>
+									<p class="text-white text-xs font-medium">Reseña recibida</p>
+									<p class="text-gray-500 text-xs">★★★★★ · Después de la cita</p>
+								</div>
+							</div>
+						</div>
+						<div class="mt-4 pt-3 border-t border-gray-700 flex justify-between text-xs">
+							<span class="text-gray-500">Este mes</span>
+							<span class="text-green-400 font-medium">↑ 38% menos cancelaciones</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Servicios 2 y 3 — Tarjetas medianas -->
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
 					<!-- Servicio 2 -->
 					<div
-						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-secondary/30 transition-all group">
-						<div
-							class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary mb-8 group-hover:scale-110 transition-transform">
-							<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+						class="bg-gray-950 border border-gray-800 hover:border-indigo-500/40 rounded-2xl p-7 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-indigo-600/20 flex items-center justify-center mb-5">
+							<span class="material-symbols-outlined text-indigo-400">web</span>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">Automatización de Procesos</h3>
-						<p class="text-on-surface-variant mb-6 font-light">
-							Sistemas que automatizan tareas repetitivas y te ahorran tiempo, permitiéndote enfocarte en lo realmente
-							importante de tu negocio.
+						<h3 class="text-white text-xl font-bold mb-3">Página Web Profesional</h3>
+						<p class="text-gray-400 text-sm leading-relaxed mb-5">
+							Tu negocio necesita una presencia digital que transmita confianza desde el primer segundo. Diseño rápida,
+							moderna y optimizada para que Google te encuentre antes que a tu competencia.
 						</p>
-						<ul class="space-y-3">
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Sistema de reservas</li>
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Automatización de flujos</li>
+						<ul class="flex flex-col gap-2">
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-indigo-400 text-base">check_circle</span>
+								Diseño mobile y escritorio
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-indigo-400 text-base">check_circle</span>
+								Optimización SEO local
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-indigo-400 text-base">check_circle</span>
+								Integración con redes sociales
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-indigo-400 text-base">check_circle</span>
+								Lista en menos de 2 semanas
+							</li>
 						</ul>
 					</div>
+
 					<!-- Servicio 3 -->
 					<div
-						class="glass-card p-10 rounded-3xl border border-outline-variant/10 hover:border-tertiary/30 transition-all group">
-						<div
-							class="w-16 h-16 bg-tertiary/10 rounded-2xl flex items-center justify-center text-tertiary mb-8 group-hover:scale-110 transition-transform">
-							<span class="material-symbols-outlined text-3xl">hub</span>
+						class="bg-gray-950 border border-gray-800 hover:border-emerald-500/40 rounded-2xl p-7 transition-all duration-300">
+						<div class="w-10 h-10 rounded-xl bg-emerald-600/20 flex items-center justify-center mb-5">
+							<span class="material-symbols-outlined text-emerald-400">hub</span>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">Sistemas Personalizados</h3>
-						<p class="text-on-surface-variant mb-6 font-light">
-							Creo sistemas a medida que se adaptan a tu negocio, no solo para tus clientes, sino también para ti.
+						<h3 class="text-white text-xl font-bold mb-3">Automatización de Procesos</h3>
+						<p class="text-gray-400 text-sm leading-relaxed mb-5">
+							¿Cuántas horas pierdes en tareas repetitivas? Confirmar citas, enviar recordatorios, cobrar, dar
+							seguimiento... Todo eso puede automatizarse para que tú te enfocas en lo que realmente importa.
 						</p>
-						<ul class="space-y-3">
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Panel de administrador</li>
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Gestión de usuarios y datos</li>
-							<li class="flex items-center gap-2 text-sm text-secondary/80"><span
-									class="material-symbols-outlined text-sm">check_circle</span>Sistemas escalables y personalizados</li>
+						<ul class="flex flex-col gap-2">
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+								Flujos automáticos de WhatsApp
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+								Seguimiento post-cita y fidelización
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+								Integración con Google Calendar
+							</li>
+							<li class="flex items-center gap-2 text-gray-300 text-sm">
+								<span class="material-symbols-outlined text-emerald-400 text-base">check_circle</span>
+								Reportes automáticos semanales
+							</li>
 						</ul>
 					</div>
 				</div>
+
+				<!-- Banner inferior — combo -->
+				<div
+					class="bg-gradient-to-r from-blue-600/10 via-indigo-600/10 to-emerald-600/10 border border-blue-500/20 rounded-2xl p-7 flex flex-col sm:flex-row items-center justify-between gap-6">
+					<div>
+						<span class="text-blue-400 text-xs font-medium tracking-widest uppercase">Más popular</span>
+						<h3 class="text-white text-xl font-bold mt-1">Paquete Integral — Los 3 servicios juntos</h3>
+						<p class="text-gray-400 text-sm mt-2">
+							Página web + sistema de reservas + automatizaciones. Todo conectado, todo funcionando desde el día uno.
+						</p>
+					</div>
+
+					<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20me%20interesa%20el%20paquete%20integral.%20%C2%BFMe%20puedes%20dar%20informaci%C3%B3n%3F"
+						target="_blank" class="shrink-0 flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3
+					rounded-xl transition-all duration-200 whitespace-nowrap">
+						<span class="material-symbols-outlined text-base">chat</span>
+						Quiero el paquete
+					</a>
+				</div>
+
 			</div>
 		</section>
-		<!-- Proyectos - Updated with 5 specific items -->
-		<section id="projects" class="py-24 px-6" id="projects">
-			<div class="max-w-7xl mx-auto">
-				<h2 class="text-4xl font-headline font-bold text-white mb-16">Proyectos Destacados</h2>
-				<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-					<!-- Project 1: Barberia (Large) -->
-					<a href="https://sergiopower.github.io/corte-recorte/" target="_blank"
-						class="md:col-span-8 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
-						<div class="h-64 md:h-80 relative overflow-hidden">
-							<img alt="Barber Shop Booking System"
-								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100"
-								src="./img/Corte-Recorte.png" />
-							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-						</div>
-						<div class="p-8">
-							<div class="flex justify-between items-start mb-4">
-								<h3 class="text-2xl font-bold text-white">Barberia Corte y Recorte: Sistema de Reservas</h3>
-								<div class="flex gap-2">
-									<span
-										class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">React</span>
-									<span
-										class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Firebase</span>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
+		<!-- SECCIÓN: LO QUE HE CONSTRUIDO -->
+		<section id="projects" class="bg-gray-900 py-24 px-6">
+			<div class="max-w-6xl mx-auto">
+
+				<!-- Encabezado -->
+				<div class="text-center mb-12">
+					<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+						Portafolio
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">
+						Lo que he construido
+					</h2>
+					<p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+						Cada proyecto resuelve un problema real de negocios como el tuyo.
+						Haz clic en tu industria y ve cómo quedaría.
+					</p>
+				</div>
+
+				<!-- Tabs -->
+				<div class="flex flex-wrap justify-center gap-3 mb-10" id="tabs-container">
+					<button onclick="filterProjects('todos')"
+						class="tab-btn active-tab px-5 py-2 rounded-full text-sm font-medium transition-all duration-200"
+						data-tab="todos">
+						Todos
+					</button>
+					<button onclick="filterProjects('barberia')"
+						class="tab-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-200" data-tab="barberia">
+						✂️ Barbería
+					</button>
+					<button onclick="filterProjects('estetica')"
+						class="tab-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-200" data-tab="estetica">
+						💅 Estética & Salón
+					</button>
+					<button onclick="filterProjects('clinica')"
+						class="tab-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-200" data-tab="clinica">
+						🏥 Clínica & Salud
+					</button>
+				</div>
+
+				<!-- Grid de proyectos -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+
+					<!-- Proyecto 1 — Barbería -->
+					<div class="project-card" data-category="barberia">
+						<div
+							class="group bg-gray-950 border border-gray-800 hover:border-blue-500/40 rounded-2xl overflow-hidden transition-all duration-300">
+							<div class="relative overflow-hidden">
+								<img src="img/Corte-Recorte.png" alt="Barberia Corte y Recorte"
+									class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+								<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+								<span class="absolute top-3 left-3 text-xs bg-blue-600 text-white px-3 py-1 rounded-full font-medium">
+									✂️ Barbería
+								</span>
+								<a href="https://sergiopower.github.io/corte-recorte/" target="_blank"
+									class="absolute top-3 right-3 w-8 h-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all">
+									<span class="material-symbols-outlined text-white text-sm">open_in_new</span>
+								</a>
+							</div>
+							<div class="p-5">
+								<h3 class="text-white font-bold text-base mb-2">Corte & Recorte — Sistema de Reservas</h3>
+								<p class="text-gray-400 text-sm leading-relaxed mb-4">
+									Agenda online con gestión de turnos en tiempo real, perfiles de barberos y recordatorios automáticos
+									por WhatsApp.
+								</p>
+								<!-- Resultado destacado -->
+								<div class="bg-blue-600/10 border border-blue-500/20 rounded-xl px-4 py-3 mb-4">
+									<p class="text-blue-300 text-xs font-medium">📉 Resultado simulado</p>
+									<p class="text-white text-sm font-semibold mt-1">40% menos cancelaciones desde el primer mes</p>
+								</div>
+								<!-- Stack -->
+								<div class="flex flex-wrap gap-2">
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">React</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Firebase</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">WhatsApp API</span>
 								</div>
 							</div>
-							<p class="text-on-surface-variant mb-6">Plataforma integral con gestión de turnos en tiempo real, perfiles
-								de barberos y recordatorios automáticos por WhatsApp que redujo las ausencias en un 40%.</p>
 						</div>
-					</a>
-					<!-- Project 2: Salon de belleza -->
-					<a href="https://sergiopower.github.io/Beauty_Salon/" target="_blank"
-						class="md:col-span-4 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
-						<div class="h-64 relative overflow-hidden">
-							<img alt="Radiance Salon"
-								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100"
-								src="./img/Radiance-Salon.png" />
-							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-						</div>
-						<div class="p-8">
-							<h3 class="text-xl font-bold text-white mb-2">Radiance Salon</h3>
-							<p class="text-on-surface-variant text-sm mb-4">Tienda online y catálogo de servicios con pasarela de
-								pagos integrada y gestión de inventario de productos.</p>
-							<div class="flex gap-2">
-								<span
-									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Next.js</span>
-								<span
-									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Stripe</span>
+					</div>
+
+					<!-- Proyecto 2 — Estética -->
+					<div class="project-card" data-category="estetica">
+						<div
+							class="group bg-gray-950 border border-gray-800 hover:border-indigo-500/40 rounded-2xl overflow-hidden transition-all duration-300">
+							<div class="relative overflow-hidden">
+								<img src="img/Radiance-Salon.png" alt="Radiance Salon"
+									class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+								<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+								<span class="absolute top-3 left-3 text-xs bg-indigo-600 text-white px-3 py-1 rounded-full font-medium">
+									💅 Salón
+								</span>
+								<a href="https://sergiopower.github.io/Beauty_Salon/" target="_blank"
+									class="absolute top-3 right-3 w-8 h-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all">
+									<span class="material-symbols-outlined text-white text-sm">open_in_new</span>
+								</a>
 							</div>
-						</div>
-					</a>
-					<!-- Project 3: Nail Salon -->
-					<a href="https://sergiopower.github.io/nail-studio/" target="_blank"
-						class="md:col-span-4 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10">
-						<div class="h-64 relative overflow-hidden">
-							<img alt="Nail Salon Management"
-								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100"
-								src="./img/Shanic-Studio.png" />
-							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-						</div>
-						<div class="p-8">
-							<h3 class="text-xl font-bold text-white mb-2">Shanic Studio</h3>
-							<p class="text-on-surface-variant text-sm mb-4">Gestión de clientes y fidelización con sistema de puntos y
-								galería de trabajos interactiva.</p>
-							<div class="flex gap-2">
-								<span
-									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Vue.js</span>
-								<span
-									class="bg-surface-container-highest px-3 py-1 rounded-full text-xs text-on-surface-variant">Supabase</span>
-							</div>
-						</div>
-					</a>
-					<!-- Project 4: Dentista & Laboratorio Clinico (Large Horizontal) -->
-					<a href="https://sergiopower.github.io/dentista/" target="_blank"
-						class="md:col-span-8 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10 flex flex-col md:row-span-1">
-						<div class="h-64 relative overflow-hidden">
-							<img alt="Medical Systems"
-								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100"
-								src="./img/Clinica-dental.png" />
-							<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-						</div>
-						<div class="p-8">
-							<div class="flex justify-between items-start mb-4">
-								<h3 class="text-2xl font-bold text-white">Clinical Sanctuary: Software Clínico</h3>
-								<div class="flex gap-2">
-									<span
-										class="bg-secondary/10 text-secondary border border-secondary/20 px-4 py-1 rounded-full text-xs font-bold">Node.js</span>
-									<span
-										class="bg-secondary/10 text-secondary border border-secondary/20 px-4 py-1 rounded-full text-xs font-bold">PostgreSQL</span>
+							<div class="p-5">
+								<h3 class="text-white font-bold text-base mb-2">Radiance Salon — Tienda & Catálogo</h3>
+								<p class="text-gray-400 text-sm leading-relaxed mb-4">
+									Catálogo de servicios con pasarela de pagos integrada, reservas online y gestión de inventario de
+									productos.
+								</p>
+								<div class="bg-indigo-600/10 border border-indigo-500/20 rounded-xl px-4 py-3 mb-4">
+									<p class="text-indigo-300 text-xs font-medium">📈 Resultado simulado</p>
+									<p class="text-white text-sm font-semibold mt-1">Ventas online activas las 24 hrs del día</p>
+								</div>
+								<div class="flex flex-wrap gap-2">
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Next.js</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Stripe</span>
 								</div>
 							</div>
-							<p class="text-on-surface-variant mb-6">Módulo dental avanzado para historias clínicas digitales,
-								odontogramas interactivos y facturación electrónica automatizada.</p>
 						</div>
-					</a>
-					<!-- Project 5: Laboratorio clinico (Bottom Row) -->
-					<a href="https://sergiopower.github.io/clinica/" target="_blank"
-						class="md:col-span-12 bg-surface-container-low rounded-3xl overflow-hidden group border border-outline-variant/10 flex flex-col md:flex-row">
-						<div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
-							<img alt="Clinical Laboratory Portal"
-								class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-100"
-								src="./img/laboratorio.png" />
-							<div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container-low hidden md:block">
+					</div>
+
+					<!-- Proyecto 3 — Estética -->
+					<div class="project-card" data-category="estetica">
+						<div
+							class="group bg-gray-950 border border-gray-800 hover:border-pink-500/40 rounded-2xl overflow-hidden transition-all duration-300">
+							<div class="relative overflow-hidden">
+								<img src="img/Shanic-Studio.png" alt="Shanic Studio"
+									class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+								<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+								<span class="absolute top-3 left-3 text-xs bg-pink-600 text-white px-3 py-1 rounded-full font-medium">
+									💅 Estética
+								</span>
+								<a href="https://sergiopower.github.io/nail-studio/" target="_blank"
+									class="absolute top-3 right-3 w-8 h-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all">
+									<span class="material-symbols-outlined text-white text-sm">open_in_new</span>
+								</a>
+							</div>
+							<div class="p-5">
+								<h3 class="text-white font-bold text-base mb-2">Shanic Studio — Fidelización de Clientes</h3>
+								<p class="text-gray-400 text-sm leading-relaxed mb-4">
+									Sistema de puntos y recompensas, galería de trabajos interactiva y gestión completa de clientes
+									frecuentes.
+								</p>
+								<div class="bg-pink-600/10 border border-pink-500/20 rounded-xl px-4 py-3 mb-4">
+									<p class="text-pink-300 text-xs font-medium">🔁 Resultado simulado</p>
+									<p class="text-white text-sm font-semibold mt-1">Clientes que regresan 2x más seguido</p>
+								</div>
+								<div class="flex flex-wrap gap-2">
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Vue.js</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Supabase</span>
+								</div>
 							</div>
 						</div>
-						<div class="md:w-1/2 p-10 flex flex-col justify-center">
-							<h3 class="text-3xl font-bold text-white mb-4">Laboratorio Precision: Resultados Online</h3>
-							<p class="text-on-surface-variant text-lg mb-8">Sistema seguro de entrega de resultados clínicos cifrados,
-								permitiendo a los pacientes descargar sus análisis y ver el historial de salud desde cualquier
-								dispositivo.</p>
-							<div class="flex gap-3">
+					</div>
+
+					<!-- Proyecto 4 — Clínica -->
+					<div class="project-card" data-category="clinica">
+						<div
+							class="group bg-gray-950 border border-gray-800 hover:border-emerald-500/40 rounded-2xl overflow-hidden transition-all duration-300">
+							<div class="relative overflow-hidden">
+								<img src="img/Clinica-dental.png" alt="Clinical Sanctuary"
+									class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+								<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
 								<span
-									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">React
-									Native</span>
-								<span
-									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">AWS
-									S3</span>
-								<span
-									class="bg-primary/10 text-primary border border-primary/20 px-4 py-1 rounded-full text-xs font-bold">Python</span>
+									class="absolute top-3 left-3 text-xs bg-emerald-600 text-white px-3 py-1 rounded-full font-medium">
+									🏥 Dental
+								</span>
+								<a href="https://sergiopower.github.io/dentista/" target="_blank"
+									class="absolute top-3 right-3 w-8 h-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all">
+									<span class="material-symbols-outlined text-white text-sm">open_in_new</span>
+								</a>
+							</div>
+							<div class="p-5">
+								<h3 class="text-white font-bold text-base mb-2">Clinical Sanctuary — Software Clínico</h3>
+								<p class="text-gray-400 text-sm leading-relaxed mb-4">
+									Historias clínicas digitales, odontogramas interactivos y facturación electrónica automatizada para
+									consultorios.
+								</p>
+								<div class="bg-emerald-600/10 border border-emerald-500/20 rounded-xl px-4 py-3 mb-4">
+									<p class="text-emerald-300 text-xs font-medium">🗂️ Resultado simulado</p>
+									<p class="text-white text-sm font-semibold mt-1">Expedientes digitales accesibles en segundos</p>
+								</div>
+								<div class="flex flex-wrap gap-2">
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Node.js</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">PostgreSQL</span>
+								</div>
 							</div>
 						</div>
-					</a>
+					</div>
+
+					<!-- Proyecto 5 — Clínica -->
+					<div class="project-card" data-category="clinica">
+						<div
+							class="group bg-gray-950 border border-gray-800 hover:border-cyan-500/40 rounded-2xl overflow-hidden transition-all duration-300">
+							<div class="relative overflow-hidden">
+								<img src="img/laboratorio.png" alt="Laboratorio Precision"
+									class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+								<div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+								<span class="absolute top-3 left-3 text-xs bg-cyan-600 text-white px-3 py-1 rounded-full font-medium">
+									🔬 Laboratorio
+								</span>
+								<a href="https://sergiopower.github.io/clinica/" target="_blank"
+									class="absolute top-3 right-3 w-8 h-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all">
+									<span class="material-symbols-outlined text-white text-sm">open_in_new</span>
+								</a>
+							</div>
+							<div class="p-5">
+								<h3 class="text-white font-bold text-base mb-2">Laboratorio Precision — Resultados Online</h3>
+								<p class="text-gray-400 text-sm leading-relaxed mb-4">
+									Entrega segura de resultados clínicos cifrados. Los pacientes descargan sus análisis desde cualquier
+									dispositivo.
+								</p>
+								<div class="bg-cyan-600/10 border border-cyan-500/20 rounded-xl px-4 py-3 mb-4">
+									<p class="text-cyan-300 text-xs font-medium">⚡ Resultado simulado</p>
+									<p class="text-white text-sm font-semibold mt-1">Cero llamadas para entregar resultados</p>
+								</div>
+								<div class="flex flex-wrap gap-2">
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">React Native</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">AWS S3</span>
+									<span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Python</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tarjeta CTA — Tu negocio aquí -->
+					<div class="project-card" data-category="todos barberia estetica clinica">
+						<div
+							class="h-full bg-gradient-to-br from-blue-600/10 to-indigo-600/10 border border-blue-500/30 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-4 hover:border-blue-400/50 transition-all duration-300 min-h-[380px]">
+							<div class="w-14 h-14 rounded-2xl bg-blue-600/20 flex items-center justify-center">
+								<span class="material-symbols-outlined text-blue-400 text-2xl">add_business</span>
+							</div>
+							<div>
+								<h3 class="text-white font-bold text-base mb-2">¿Tu negocio podría ser el siguiente?</h3>
+								<p class="text-gray-400 text-sm leading-relaxed">
+									Cuéntame cómo funciona tu negocio hoy y te muestro exactamente qué podría tener mañana.
+								</p>
+							</div>
+							<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20vi%20tus%20proyectos%20y%20me%20interesa%20algo%20para%20mi%20negocio."
+								target="_blank"
+								class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-all duration-200">
+								<span class="material-symbols-outlined text-base">chat</span>
+								Quiero el mío
+							</a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
-		<!-- Tecnologías -->
-		<section class="py-24 px-6 overflow-hidden">
-			<div class="max-w-7xl mx-auto">
-				<div class="flex flex-col md:flex-row items-center justify-between gap-12">
-					<div class="max-w-md">
-						<h2 class="text-3xl font-headline font-bold text-white mb-4">Stack Tecnológico</h2>
-						<p class="text-on-surface-variant">Herramientas de vanguardia para garantizar el máximo rendimiento.</p>
-					</div>
-					<div class="relative w-full overflow-hidden">
-						<div class="flex gap-12 animate-scroll whitespace-nowrap">
+		<!-- Script de filtrado -->
+		<style>
+			.tab-btn {
+				background-color: rgb(17 24 39);
+				color: rgb(156 163 175);
+				border: 1px solid rgb(55 65 81);
+			}
 
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32"
-										fill="currentColor">
-										<path d="M6 28L4 3H28L26 28L16 31L6 28Z" class="text-orange-600" />
-										<path d="M26 5H16V29.5L24 27L26 5Z" class="text-orange-500" />
-										<path
-											d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-											class="text-white" />
-									</svg>
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">HTML</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+			.tab-btn:hover {
+				border-color: rgb(59 130 246 / 0.5);
+				color: white;
+			}
 
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 -51 256 256"
-										xmlns="http://www.w3.org/2000/svg">
-										<defs>
-											<linearGradient id="tailwind-gradient" x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%">
-												<stop stop-color="#2298BD" offset="0%"></stop>
-												<stop stop-color="#0ED7B5" offset="100%"></stop>
-											</linearGradient>
-										</defs>
+			.active-tab {
+				background-color: rgb(37 99 235);
+				color: white;
+				border-color: rgb(37 99 235);
+			}
 
-										<path
-											d="M128,0 C93.8666667,0 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,0 128,0 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z"
-											fill="url(#tailwind-gradient)"></path>
-									</svg>
+			.project-card {
+				transition: opacity 0.3s ease, transform 0.3s ease;
+			}
 
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">TailwindCSS</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+			.project-card.hidden-card {
+				display: none;
+			}
+		</style>
+		<script>
+			function filterProjects(category) {
+				// Actualizar tabs
+				document.querySelectorAll('.tab-btn').forEach(btn => {
+					btn.classList.remove('active-tab');
+					if (btn.dataset.tab === category) btn.classList.add('active-tab');
+				});
 
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 512 512"
-										xmlns="http://www.w3.org/2000/svg">
-										<!-- Fondo -->
-										<rect width="512" height="512" rx="15%" class="fill-yellow-400" />
+				// Filtrar tarjetas
+				document.querySelectorAll('.project-card').forEach(card => {
+					const cats = card.dataset.category.split(' ');
+					if (category === 'todos' || cats.includes(category)) {
+						card.classList.remove('hidden-card');
+					} else {
+						card.classList.add('hidden-card');
+					}
+				});
+			}
+		</script>
 
-										<!-- Letras JS -->
-										<path
-											d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"
-											class="fill-black" />
-									</svg>
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12 hidden">
+			<div class="gradient-line"></div>
+		</div>
 
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">JS</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32"
-										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
-											fill="#53C1DE" />
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
-											fill="#53C1DE" />
-									</svg>
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">REACT</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+		<!-- SECCIÓN: ABOUT -->
+		<section id="acerca" class="bg-gray-900 py-24 px-6 hidden">
+			<div class="max-w-5xl mx-auto">
 
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32">
-										<path
-											d="M17.1725 2.29872C16.4627 1.89953 15.5373 1.90132 14.8269 2.29872C11.2689 4.26227 7.71082 6.22641 4.15216 8.18906C3.45969 8.55335 2.99264 9.29698 3.00009 10.0688V21.9328C2.99509 22.7197 3.48622 23.4705 4.19655 23.8298C5.21871 24.3736 6.2118 24.9726 7.25244 25.4802C8.45451 26.0709 9.95843 26.2015 11.1752 25.5855C12.1629 25.075 12.6016 23.9395 12.6003 22.896C12.6083 18.9806 12.6016 15.0651 12.6034 11.1496C12.6269 10.9756 12.4962 10.7896 12.3064 10.7938C11.8517 10.7866 11.3964 10.7896 10.9417 10.7926C10.7699 10.7764 10.6022 10.9191 10.6152 11.0918C10.6091 14.982 10.6164 18.8734 10.6115 22.7642C10.6214 23.3024 10.2578 23.8196 9.73913 24.0014C8.5412 24.4213 5.12198 22.2012 5.12198 22.2012C4.9965 22.1431 4.91682 22.007 4.92912 21.8718C4.92912 17.9576 4.92973 14.0433 4.92912 10.1297C4.91187 9.97191 5.00912 9.8298 5.15402 9.76538C8.70033 7.8134 12.2448 5.85654 15.7911 3.90336C15.9143 3.82115 16.086 3.8214 16.2089 3.90396C19.7552 5.85654 23.3003 7.81161 26.8472 9.76368C26.9926 9.828 27.0857 9.9725 27.0709 10.1297C27.0703 14.0433 27.0721 17.9576 27.0697 21.8713C27.0802 22.0098 27.0086 22.144 26.8793 22.2048C23.3661 24.1462 19.8129 26.025 16.3315 28.0228C16.1796 28.1099 16.0075 28.2086 15.8373 28.1126C14.9218 27.6062 14.0174 27.0801 13.1049 26.5688C13.0057 26.5069 12.8794 26.4803 12.7759 26.5496C12.3668 26.7652 11.982 26.9398 11.5122 27.1258C10.8524 27.387 10.9578 27.4938 11.5529 27.8405C12.62 28.4444 13.6889 29.0459 14.756 29.6504C15.4585 30.0888 16.4024 30.12 17.1275 29.7149C20.6861 27.7538 24.2436 25.7904 27.8029 23.8293C28.5113 23.468 29.0049 22.7202 28.9999 21.9327V10.0688C29.0068 9.31264 28.5576 8.58227 27.886 8.21259C24.3156 6.23947 20.7435 4.27064 17.1725 2.29872Z"
-											fill="#8CC84B" />
-										<path
-											d="M22.5419 11.2062C21.1452 10.459 19.4836 10.4192 17.9315 10.5169C16.8102 10.6277 15.6309 10.9371 14.814 11.7409C13.9761 12.5489 13.7937 13.8537 14.1917 14.9085C14.4769 15.6539 15.1948 16.1386 15.9372 16.395C16.8935 16.7326 17.8979 16.837 18.9026 16.9414C19.819 17.0366 20.7357 17.1319 21.6165 17.4042C21.9763 17.5234 22.3953 17.7058 22.5055 18.0973C22.6073 18.5609 22.4957 19.0998 22.1193 19.4219C20.9237 20.3682 17.5979 20.2232 16.4166 19.4784C15.939 19.1611 15.7332 18.5994 15.6495 18.0641C15.6402 17.8973 15.5059 17.7443 15.3248 17.757C14.8713 17.7516 14.4178 17.7528 13.9643 17.7564C13.8061 17.7431 13.6416 17.8557 13.6329 18.0172C13.5397 20.4689 15.7914 21.5377 17.9039 21.773C19.1108 21.888 20.3442 21.8814 21.5327 21.6224C22.4261 21.419 23.3219 21.0444 23.9369 20.3563C24.6953 19.52 24.8444 18.2749 24.5043 17.2332C24.2443 16.4559 23.5012 15.9573 22.7416 15.7008C21.7086 15.3466 20.4844 15.1562 19.5488 15.0671C18.1889 14.9376 16.5729 14.9905 16.188 14.0969C16.0345 13.629 16.1651 13.048 16.5951 12.7602C17.7328 11.9885 20.0483 12.091 21.2265 12.6675C21.7675 12.9384 22.081 13.4948 22.2104 14.0565C22.2344 14.2215 22.3454 14.3937 22.5364 14.3865C22.9868 14.3955 23.4372 14.3889 23.8875 14.3895C24.0422 14.4003 24.2116 14.313 24.2418 14.1546C24.2227 12.9806 23.6232 11.7788 22.5419 11.2062Z"
-											fill="#8CC84B" />
-									</svg>
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">NODE</span>
+					<!-- Columna izquierda: Foto -->
+					<div class="flex justify-center lg:justify-start">
+						<div class="relative">
+
+							<!-- Foto -->
+							<div class="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-gray-800 shadow-2xl">
+								<img src="img/sergio.jpg" alt="Sergio Guzmán — Desarrollador Web" class="w-full h-full object-cover" />
 							</div>
 
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32"
-										fill="currentColor">
-										<path d="M6 28L4 3H28L26 28L16 31L6 28Z" class="text-orange-600" />
-										<path d="M26 5H16V29.5L24 27L26 5Z" class="text-orange-500" />
-										<path
-											d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-											class="text-white" />
-									</svg>
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">HTML</span>
+							<!-- Badge flotante -->
+							<div
+								class="absolute -bottom-4 -right-4 bg-gray-950 border border-gray-800 rounded-2xl px-4 py-3 shadow-xl">
+								<p class="text-white text-xs font-bold">⚡ Disponible ahora</p>
+								<p class="text-gray-500 text-xs mt-0.5">para nuevos proyectos</p>
 							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
 
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 -51 256 256"
-										xmlns="http://www.w3.org/2000/svg">
-										<defs>
-											<linearGradient id="tailwind-gradient" x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%">
-												<stop stop-color="#2298BD" offset="0%"></stop>
-												<stop stop-color="#0ED7B5" offset="100%"></stop>
-											</linearGradient>
-										</defs>
+							<!-- Decoración -->
+							<div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-600/10 rounded-2xl -z-10"></div>
+							<div class="absolute -bottom-6 -left-6 w-16 h-16 bg-indigo-600/10 rounded-full -z-10"></div>
 
-										<path
-											d="M128,0 C93.8666667,0 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,0 128,0 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z"
-											fill="url(#tailwind-gradient)"></path>
-									</svg>
-
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">TailwindCSS</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 512 512"
-										xmlns="http://www.w3.org/2000/svg">
-										<!-- Fondo -->
-										<rect width="512" height="512" rx="15%" class="fill-yellow-400" />
-
-										<!-- Letras JS -->
-										<path
-											d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"
-											class="fill-black" />
-									</svg>
-
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">JS</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32"
-										fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
-											fill="#53C1DE" />
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
-											fill="#53C1DE" />
-									</svg>
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">REACT</span>
-							</div>
-							<div class="flex flex-col items-center gap-3 group">
-								<div
-									class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-
-									<svg class="w-10 h-10 group-hover:scale-110 transition-all duration-300" viewBox="0 0 32 32">
-										<path
-											d="M17.1725 2.29872C16.4627 1.89953 15.5373 1.90132 14.8269 2.29872C11.2689 4.26227 7.71082 6.22641 4.15216 8.18906C3.45969 8.55335 2.99264 9.29698 3.00009 10.0688V21.9328C2.99509 22.7197 3.48622 23.4705 4.19655 23.8298C5.21871 24.3736 6.2118 24.9726 7.25244 25.4802C8.45451 26.0709 9.95843 26.2015 11.1752 25.5855C12.1629 25.075 12.6016 23.9395 12.6003 22.896C12.6083 18.9806 12.6016 15.0651 12.6034 11.1496C12.6269 10.9756 12.4962 10.7896 12.3064 10.7938C11.8517 10.7866 11.3964 10.7896 10.9417 10.7926C10.7699 10.7764 10.6022 10.9191 10.6152 11.0918C10.6091 14.982 10.6164 18.8734 10.6115 22.7642C10.6214 23.3024 10.2578 23.8196 9.73913 24.0014C8.5412 24.4213 5.12198 22.2012 5.12198 22.2012C4.9965 22.1431 4.91682 22.007 4.92912 21.8718C4.92912 17.9576 4.92973 14.0433 4.92912 10.1297C4.91187 9.97191 5.00912 9.8298 5.15402 9.76538C8.70033 7.8134 12.2448 5.85654 15.7911 3.90336C15.9143 3.82115 16.086 3.8214 16.2089 3.90396C19.7552 5.85654 23.3003 7.81161 26.8472 9.76368C26.9926 9.828 27.0857 9.9725 27.0709 10.1297C27.0703 14.0433 27.0721 17.9576 27.0697 21.8713C27.0802 22.0098 27.0086 22.144 26.8793 22.2048C23.3661 24.1462 19.8129 26.025 16.3315 28.0228C16.1796 28.1099 16.0075 28.2086 15.8373 28.1126C14.9218 27.6062 14.0174 27.0801 13.1049 26.5688C13.0057 26.5069 12.8794 26.4803 12.7759 26.5496C12.3668 26.7652 11.982 26.9398 11.5122 27.1258C10.8524 27.387 10.9578 27.4938 11.5529 27.8405C12.62 28.4444 13.6889 29.0459 14.756 29.6504C15.4585 30.0888 16.4024 30.12 17.1275 29.7149C20.6861 27.7538 24.2436 25.7904 27.8029 23.8293C28.5113 23.468 29.0049 22.7202 28.9999 21.9327V10.0688C29.0068 9.31264 28.5576 8.58227 27.886 8.21259C24.3156 6.23947 20.7435 4.27064 17.1725 2.29872Z"
-											fill="#8CC84B" />
-										<path
-											d="M22.5419 11.2062C21.1452 10.459 19.4836 10.4192 17.9315 10.5169C16.8102 10.6277 15.6309 10.9371 14.814 11.7409C13.9761 12.5489 13.7937 13.8537 14.1917 14.9085C14.4769 15.6539 15.1948 16.1386 15.9372 16.395C16.8935 16.7326 17.8979 16.837 18.9026 16.9414C19.819 17.0366 20.7357 17.1319 21.6165 17.4042C21.9763 17.5234 22.3953 17.7058 22.5055 18.0973C22.6073 18.5609 22.4957 19.0998 22.1193 19.4219C20.9237 20.3682 17.5979 20.2232 16.4166 19.4784C15.939 19.1611 15.7332 18.5994 15.6495 18.0641C15.6402 17.8973 15.5059 17.7443 15.3248 17.757C14.8713 17.7516 14.4178 17.7528 13.9643 17.7564C13.8061 17.7431 13.6416 17.8557 13.6329 18.0172C13.5397 20.4689 15.7914 21.5377 17.9039 21.773C19.1108 21.888 20.3442 21.8814 21.5327 21.6224C22.4261 21.419 23.3219 21.0444 23.9369 20.3563C24.6953 19.52 24.8444 18.2749 24.5043 17.2332C24.2443 16.4559 23.5012 15.9573 22.7416 15.7008C21.7086 15.3466 20.4844 15.1562 19.5488 15.0671C18.1889 14.9376 16.5729 14.9905 16.188 14.0969C16.0345 13.629 16.1651 13.048 16.5951 12.7602C17.7328 11.9885 20.0483 12.091 21.2265 12.6675C21.7675 12.9384 22.081 13.4948 22.2104 14.0565C22.2344 14.2215 22.3454 14.3937 22.5364 14.3865C22.9868 14.3955 23.4372 14.3889 23.8875 14.3895C24.0422 14.4003 24.2116 14.313 24.2418 14.1546C24.2227 12.9806 23.6232 11.7788 22.5419 11.2062Z"
-											fill="#8CC84B" />
-									</svg>
-
-								</div>
-								<span
-									class="text-xs font-bold tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">NODE</span>
-							</div>
 						</div>
 					</div>
+
+					<!-- Columna derecha: Texto -->
+					<div class="flex flex-col gap-6">
+
+						<div>
+							<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+								Quién soy
+							</span>
+							<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 leading-tight">
+								Hola, soy Sergio. <br />
+								<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+									Construyo lo que tu negocio necesita.
+								</span>
+							</h2>
+						</div>
+
+						<p class="text-gray-400 leading-relaxed">
+							Estudié Ingeniería en Sistemas y desde el primer día supe que quería ir más allá del aula. Empecé a
+							aprender por mi cuenta, a construir proyectos, a entender cómo la tecnología puede cambiar la forma en que
+							un negocio opera — y me enganché.
+						</p>
+
+						<p class="text-gray-400 leading-relaxed">
+							No me interesa solo escribir código. Lo que me mueve es ver a un negocio funcionar mejor gracias a lo que
+							construí. Cuando un dueño de barbería me dice que ya no persigue a sus clientes para confirmar citas — eso
+							es lo que busco con cada proyecto.
+						</p>
+
+						<p class="text-gray-400 leading-relaxed">
+							Me especialicé en negocios de citas porque vi una oportunidad real: son negocios con mucho potencial que
+							siguen operando como hace 10 años. Con las herramientas correctas, pueden competir con cualquiera.
+						</p>
+
+						<!-- Valores en píldoras -->
+						<div class="flex flex-wrap gap-3 mt-2">
+							<span
+								class="flex items-center gap-2 bg-gray-950 border border-gray-800 text-gray-300 text-sm px-4 py-2 rounded-full">
+								<span class="material-symbols-outlined text-blue-400 text-sm">tune</span>
+								Me adapto a tu negocio
+							</span>
+							<span
+								class="flex items-center gap-2 bg-gray-950 border border-gray-800 text-gray-300 text-sm px-4 py-2 rounded-full">
+								<span class="material-symbols-outlined text-blue-400 text-sm">handshake</span>
+								Trato directo y honesto
+							</span>
+							<span
+								class="flex items-center gap-2 bg-gray-950 border border-gray-800 text-gray-300 text-sm px-4 py-2 rounded-full">
+								<span class="material-symbols-outlined text-blue-400 text-sm">trending_up</span>
+								Enfocado en resultados
+							</span>
+						</div>
+
+						<!-- CTA -->
+						<div class="flex flex-col sm:flex-row gap-4 mt-2">
+
+							<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20me%20gustar%C3%ADa%20platicar%20sobre%20mi%20negocio."
+								target="_blank" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6
+							py-3 rounded-xl transition-all duration-200 shadow-lg shadow-blue-600/25">
+								<span class="material-symbols-outlined text-base">chat</span>
+								Hablemos
+							</a>
+
+							<a href="mailto:serguz95444@gmail.com" class="flex items-center justify-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-300
+							hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200">
+								<span class="material-symbols-outlined text-base">mail</span>
+								serguz95444@gmail.com
+							</a>
+						</div>
+
+					</div>
 				</div>
+
+				<!-- Franja de stats -->
+				<div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+					<div class="bg-gray-950 border border-gray-800 rounded-2xl p-5 text-center">
+						<p class="text-3xl font-bold text-white">5+</p>
+						<p class="text-gray-500 text-sm mt-1">Proyectos construidos</p>
+					</div>
+					<div class="bg-gray-950 border border-gray-800 rounded-2xl p-5 text-center">
+						<p class="text-3xl font-bold text-white">3+</p>
+						<p class="text-gray-500 text-sm mt-1">Años aprendiendo</p>
+					</div>
+					<div class="bg-gray-950 border border-gray-800 rounded-2xl p-5 text-center">
+						<p class="text-3xl font-bold text-white">2 sem</p>
+						<p class="text-gray-500 text-sm mt-1">Entrega promedio</p>
+					</div>
+					<div class="bg-gray-950 border border-gray-800 rounded-2xl p-5 text-center">
+						<p class="text-3xl font-bold text-white">100%</p>
+						<p class="text-gray-500 text-sm mt-1">Compromiso en cada proyecto</p>
+					</div>
+				</div>
+
 			</div>
 		</section>
-		<!-- Formación y Cursos -->
-		<section class="py-24 px-6 bg-surface-container-lowest">
-			<div class="max-w-7xl mx-auto">
-				<div class="mb-16">
-					<h2 class="text-4xl font-headline font-bold text-white">Formación y Cursos</h2>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
+		<!-- SECCIÓN: PROCESO -->
+		<section id="proceso" class="bg-gray-950 py-24 px-6">
+			<div class="max-w-5xl mx-auto">
+
+				<!-- Encabezado -->
+				<div class="text-center mb-16">
+					<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+						Cómo trabajo
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">
+						De la idea a tu negocio funcionando
+					</h2>
+					<p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+						Un proceso claro, sin tecnicismos y con fechas reales. Sabes exactamente qué pasa en cada etapa.
+					</p>
 				</div>
-				<div class="space-y-4">
+
+				<!-- Pasos -->
+				<div class="relative">
+
+					<!-- Línea vertical conectora (solo desktop) -->
 					<div
-						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
-						<div class="flex items-center gap-6">
-							<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-								<span class="material-symbols-outlined">school</span>
-							</div>
-							<div>
-								<h3 class="text-xl font-bold text-white">Ing. Sistemas Computacionales</h3>
-								<p class="text-on-surface-variant text-sm">Licenciatura • Universidad UTEL</p>
-							</div>
-						</div>
-						<span class="text-xs font-bold text-primary px-4 py-2 bg-primary/5 rounded-full border border-primary/20">
-							COMPLETADO
-						</span>
+						class="hidden lg:block absolute left-[39px] top-10 bottom-10 w-px bg-gradient-to-b from-blue-500/0 via-blue-500/30 to-blue-500/0">
 					</div>
-					<div
-						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
-						<div class="flex items-center gap-6">
-							<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
-								<span class="material-symbols-outlined">psychology</span>
+
+					<div class="flex flex-col gap-8">
+
+						<!-- Paso 1 -->
+						<div class="flex flex-col lg:flex-row gap-6 items-start group">
+							<div
+								class="relative shrink-0 w-20 h-20 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex flex-col items-center justify-center group-hover:bg-blue-600/30 transition-all duration-300">
+								<span class="material-symbols-outlined text-blue-400 text-2xl">forum</span>
+								<span class="text-blue-400 text-xs font-bold mt-1">01</span>
 							</div>
-							<div>
-								<h3 class="text-xl font-bold text-white">Certificación Frontend Developer</h3>
-								<p class="text-on-surface-variant text-sm">Avanzado • Platzi</p>
-							</div>
-						</div>
-						<span class="text-xs font-bold text-primary px-4 py-2 bg-primary/5 rounded-full border border-primary/20">
-							COMPLETADO
-						</span>
-					</div>
-					<div
-						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
-						<div class="flex items-center gap-6">
-							<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
-								<span class="material-symbols-outlined">psychology</span>
-							</div>
-							<div>
-								<h3 class="text-xl font-bold text-white">Certificación Optimización Web</h3>
-								<p class="text-on-surface-variant text-sm">Avanzado • Platzi</p>
-							</div>
-						</div>
-						<span class="text-xs font-bold text-primary px-4 py-2 bg-primary/5 rounded-full border border-primary/20">
-							COMPLETADO
-						</span>
-					</div>
-					<div
-						class="group bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6 hover:bg-surface-container transition-colors">
-						<div class="flex items-center gap-6">
-							<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
-								<span class="material-symbols-outlined">psychology</span>
-							</div>
-							<div>
-								<h3 class="text-xl font-bold text-white">Certificación React JS</h3>
-								<p class="text-on-surface-variant text-sm">Avanzado • Platzi</p>
+							<div
+								class="bg-gray-900 border border-gray-800 group-hover:border-blue-500/30 rounded-2xl p-6 flex-1 transition-all duration-300">
+								<div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+									<h3 class="text-white text-lg font-bold">Llamada de diagnóstico gratuita</h3>
+									<span class="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full">15–30 min · Sin costo</span>
+								</div>
+								<p class="text-gray-400 text-sm leading-relaxed">
+									Hablamos por WhatsApp o videollamada. Me cuentas cómo funciona tu negocio hoy, qué problemas tienes y
+									qué quieres lograr. Sin formularios complicados ni presentaciones largas.
+								</p>
+								<div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+									<span class="material-symbols-outlined text-gray-600 text-sm">check_circle</span>
+									Sin compromiso — si no encajamos, te lo digo con honestidad
+								</div>
 							</div>
 						</div>
-						<span class="text-xs font-bold text-primary px-4 py-2 bg-primary/5 rounded-full border border-primary/20">
-							COMPLETADO
-						</span>
-						<!-- <span
-							class="text-xs font-bold text-secondary px-4 py-2 bg-secondary/5 rounded-full border border-secondary/20">EN
-							CURSO</span> -->
+
+						<!-- Paso 2 -->
+						<div class="flex flex-col lg:flex-row gap-6 items-start group">
+							<div
+								class="relative shrink-0 w-20 h-20 rounded-2xl bg-indigo-600/20 border border-indigo-500/30 flex flex-col items-center justify-center group-hover:bg-indigo-600/30 transition-all duration-300">
+								<span class="material-symbols-outlined text-indigo-400 text-2xl">description</span>
+								<span class="text-indigo-400 text-xs font-bold mt-1">02</span>
+							</div>
+							<div
+								class="bg-gray-900 border border-gray-800 group-hover:border-indigo-500/30 rounded-2xl p-6 flex-1 transition-all duration-300">
+								<div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+									<h3 class="text-white text-lg font-bold">Propuesta personalizada</h3>
+									<span class="text-xs text-indigo-400 bg-indigo-400/10 px-3 py-1 rounded-full">24–48 hrs después</span>
+								</div>
+								<p class="text-gray-400 text-sm leading-relaxed">
+									Te envío una propuesta clara con lo que incluye el proyecto, el tiempo estimado y el precio. Sin
+									letras chiquitas ni costos ocultos. Si tienes dudas, las resolvemos antes de arrancar.
+								</p>
+								<div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+									<span class="material-symbols-outlined text-gray-600 text-sm">check_circle</span>
+									Precio fijo — no hay sorpresas al final
+								</div>
+							</div>
+						</div>
+
+						<!-- Paso 3 -->
+						<div class="flex flex-col lg:flex-row gap-6 items-start group">
+							<div
+								class="relative shrink-0 w-20 h-20 rounded-2xl bg-violet-600/20 border border-violet-500/30 flex flex-col items-center justify-center group-hover:bg-violet-600/30 transition-all duration-300">
+								<span class="material-symbols-outlined text-violet-400 text-2xl">build</span>
+								<span class="text-violet-400 text-xs font-bold mt-1">03</span>
+							</div>
+							<div
+								class="bg-gray-900 border border-gray-800 group-hover:border-violet-500/30 rounded-2xl p-6 flex-1 transition-all duration-300">
+								<div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+									<h3 class="text-white text-lg font-bold">Desarrollo y revisiones</h3>
+									<span class="text-xs text-violet-400 bg-violet-400/10 px-3 py-1 rounded-full">1–2 semanas</span>
+								</div>
+								<p class="text-gray-400 text-sm leading-relaxed">
+									Arranco con el desarrollo y te comparto avances en tiempo real. Tienes hasta 2 rondas de revisión
+									incluidas para ajustar detalles. Tú decides cuándo está listo.
+								</p>
+								<div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+									<span class="material-symbols-outlined text-gray-600 text-sm">check_circle</span>
+									Acceso a una vista previa antes de la entrega final
+								</div>
+							</div>
+						</div>
+
+						<!-- Paso 4 -->
+						<div class="flex flex-col lg:flex-row gap-6 items-start group">
+							<div
+								class="relative shrink-0 w-20 h-20 rounded-2xl bg-emerald-600/20 border border-emerald-500/30 flex flex-col items-center justify-center group-hover:bg-emerald-600/30 transition-all duration-300">
+								<span class="material-symbols-outlined text-emerald-400 text-2xl">rocket_launch</span>
+								<span class="text-emerald-400 text-xs font-bold mt-1">04</span>
+							</div>
+							<div
+								class="bg-gray-900 border border-gray-800 group-hover:border-emerald-500/30 rounded-2xl p-6 flex-1 transition-all duration-300">
+								<div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+									<h3 class="text-white text-lg font-bold">Entrega y capacitación</h3>
+									<span class="text-xs text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full">Día de
+										lanzamiento</span>
+								</div>
+								<p class="text-gray-400 text-sm leading-relaxed">
+									Publicamos tu proyecto y te enseño a usarlo en una sesión rápida. Sales sabiendo exactamente cómo
+									gestionar tu agenda, ver reservas y entender tus métricas. Sin depender de nadie.
+								</p>
+								<div class="mt-4 flex items-center gap-2 text-xs text-gray-500">
+									<span class="material-symbols-outlined text-gray-600 text-sm">check_circle</span>
+									Incluye 7 días de soporte post-entrega para dudas
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
+
+				<!-- CTA final de sección -->
+				<div class="mt-16 text-center">
+					<p class="text-gray-400 text-base mb-6">
+						El primer paso es gratis y sin compromiso. <br class="hidden sm:block" />
+						<span class="text-white font-medium">¿Hablamos hoy?</span>
+					</p>
+
+					<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20quiero%20agendar%20la%20llamada%20de%20diagn%C3%B3stico%20gratuita."
+						target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4
+					rounded-xl transition-all duration-200 shadow-lg shadow-blue-600/25">
+						<span class="material-symbols-outlined text-base">chat</span>
+						Agendar llamada gratuita
+					</a>
+				</div>
+
 			</div>
 		</section>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
+		<!-- SECCIÓN: FAQ -->
+		<section id="faq" class="bg-gray-950 py-24 px-6">
+			<div class="max-w-3xl mx-auto">
+
+				<!-- Encabezado -->
+				<div class="text-center mb-16">
+					<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+						Preguntas frecuentes
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">
+						Todo lo que necesitas saber antes de arrancar
+					</h2>
+					<p class="text-gray-400 mt-4 text-lg">
+						Si tienes una duda que no está aquí, escríbeme por WhatsApp — respondo el mismo día.
+					</p>
+				</div>
+
+				<!-- Preguntas -->
+				<div class="flex flex-col gap-4" id="faq-container">
+
+					<!-- FAQ 1 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Cuánto cuesta una página web con sistema de reservas?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<p class="text-gray-400 text-sm leading-relaxed">
+								Manejo paquetes con precios definidos para que sepas exactamente qué incluye cada uno antes de
+								comprometerte. El paquete integral — página web + sistema de reservas + automatizaciones — parte desde
+								un precio base que te comparto en la llamada de diagnóstico gratuita, ya que cada negocio tiene
+								necesidades distintas.
+							</p>
+							<p class="text-gray-400 text-sm leading-relaxed mt-3">
+								Lo que sí te puedo garantizar: precio fijo desde el inicio, sin cobros extra al final.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ 2 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Cuánto tiempo tarda en estar listo mi proyecto?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<p class="text-gray-400 text-sm leading-relaxed">
+								Una página web sencilla puede estar lista en menos de una semana. El paquete completo con sistema de
+								reservas y automatizaciones tarda entre 1 y 2 semanas dependiendo de la complejidad.
+							</p>
+							<p class="text-gray-400 text-sm leading-relaxed mt-3">
+								Siempre te doy una fecha de entrega real antes de arrancar — no prometo lo que no puedo cumplir.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ 3 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Qué incluye el paquete completo exactamente?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<ul class="flex flex-col gap-3 mt-1">
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									Página web profesional optimizada para Google y móviles
+								</li>
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									Sistema de reservas online — tus clientes agendan solos, 24/7
+								</li>
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									Recordatorios automáticos por WhatsApp para reducir cancelaciones
+								</li>
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									Panel de administración para gestionar tu agenda fácilmente
+								</li>
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									Sesión de capacitación para que sepas usar todo sin depender de nadie
+								</li>
+								<li class="flex items-start gap-3 text-gray-400 text-sm">
+									<span class="material-symbols-outlined text-blue-400 text-base mt-0.5">check_circle</span>
+									7 días de soporte post-entrega incluidos
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- FAQ 4 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Qué pasa después de la entrega? ¿Me dejas solo?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<p class="text-gray-400 text-sm leading-relaxed">
+								No. Todos los proyectos incluyen 7 días de soporte gratuito después de la entrega para resolver
+								cualquier duda o ajuste menor.
+							</p>
+							<p class="text-gray-400 text-sm leading-relaxed mt-3">
+								Si quieres tranquilidad a largo plazo, ofrezco un plan de mantenimiento mensual que incluye
+								actualizaciones, respaldo de datos, monitoreo y soporte prioritario. Así tu negocio siempre está
+								funcionando sin que tú te preocupes por lo técnico.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ 5 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Necesito saber de tecnología para usar lo que construyes?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<p class="text-gray-400 text-sm leading-relaxed">
+								Para nada. Todo lo que entrego está pensado para que cualquier persona pueda usarlo desde el primer día
+								— sin cursos, sin manuales de 50 páginas y sin llamarme cada vez que hay una duda.
+							</p>
+							<p class="text-gray-400 text-sm leading-relaxed mt-3">
+								En la sesión de capacitación te enseño todo en menos de una hora. Si tienes un smartphone, tienes todo
+								lo que necesitas.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ 6 -->
+					<div class="faq-item bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)"
+							class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-800/50 transition-all duration-200">
+							<span class="text-white font-semibold text-base">
+								¿Trabajas solo con barberías o también con otros negocios?
+							</span>
+							<span
+								class="material-symbols-outlined text-blue-400 shrink-0 transition-transform duration-300 faq-icon">expand_more</span>
+						</button>
+						<div class="faq-body hidden px-6 pb-6">
+							<p class="text-gray-400 text-sm leading-relaxed">
+								Me especializo en cualquier negocio que trabaje con citas: barberías, estéticas, salones de uñas,
+								clínicas dentales, consultorios médicos, podólogos, spas y similares.
+							</p>
+							<p class="text-gray-400 text-sm leading-relaxed mt-3">
+								Si tu negocio vive de las citas y quieres automatizar tu agenda, probablemente puedo ayudarte. Escríbeme
+								y lo evaluamos juntos.
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- CTA al final del FAQ -->
+				<div class="mt-12 text-center">
+					<p class="text-gray-400 text-sm mb-4">¿Tienes una duda diferente?</p>
+
+					<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20tengo%20una%20pregunta%20antes%20de%20decidirme."
+						target="_blank" class="inline-flex items-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-300
+					hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200">
+						<span class="material-symbols-outlined text-base">chat</span>
+						Pregúntame por WhatsApp
+					</a>
+				</div>
+
+			</div>
+		</section>
+		<!-- Script accordion -->
+		<script>
+			function toggleFaq(btn) {
+				const body = btn.nextElementSibling;
+				const icon = btn.querySelector('.faq-icon');
+				const isOpen = !body.classList.contains('hidden');
+
+				// Cerrar todos
+				document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+				document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+				// Abrir el seleccionado si estaba cerrado
+				if (!isOpen) {
+					body.classList.remove('hidden');
+					icon.style.transform = 'rotate(180deg)';
+				}
+			}
+		</script>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
+		<!-- SECCIÓN: CTA FINAL -->
+		<section id="cta" class="bg-gray-900 py-24 px-6 relative overflow-hidden">
+
+			<!-- Fondo decorativo -->
+			<div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-gray-900 to-indigo-600/5"></div>
+			<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-3xl">
+			</div>
+
+			<div class="relative z-10 max-w-4xl mx-auto text-center">
+
+				<!-- Etiqueta -->
+				<span class="text-blue-400 text-sm font-medium tracking-widest uppercase">
+					Último aviso
+				</span>
+
+				<!-- Headline de reto -->
+				<h2 class="text-3xl sm:text-5xl font-bold text-white mt-4 leading-tight">
+					La barbería de la esquina <br class="hidden sm:block" />
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+						ya automatizó su agenda.
+					</span>
+				</h2>
+
+				<p class="text-gray-400 text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+					Mientras tú confirmas citas por WhatsApp, tu competencia las recibe sola, manda recordatorios automáticos y no
+					pierde un solo cliente por olvido.
+					<span class="text-white font-medium"> La pregunta no es si vas a digitalizarte — es cuándo.</span>
+				</p>
+
+				<!-- Tarjeta central -->
+				<div class="mt-12 bg-gray-950 border border-gray-800 rounded-2xl p-8 sm:p-10 max-w-2xl mx-auto">
+
+					<p class="text-white font-bold text-xl mb-2">¿Tu negocio podría ser el siguiente?</p>
+					<p class="text-gray-400 text-sm mb-8">
+						La llamada de diagnóstico es gratuita, dura 15 minutos y sin compromiso. Si no encajamos, te lo digo con
+						honestidad.
+					</p>
+
+					<!-- CTAs -->
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+						<a href="https://wa.me/525525184112?text=Hola%20Sergio%2C%20quiero%20que%20mi%20negocio%20sea%20el%20siguiente.%20%C2%BFAgendamos%20una%20llamada%3F"
+							target="_blank" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4
+						rounded-xl transition-all duration-200 shadow-lg shadow-blue-600/25 text-base">
+							<span class="material-symbols-outlined text-base">chat</span>
+							Quiero ser el siguiente
+						</a>
+
+						<a href="mailto:serguz95444@gmail.com" class="flex items-center justify-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-300
+						hover:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 text-base">
+							<span class="material-symbols-outlined text-base">mail</span>
+							Escribir por email
+						</a>
+					</div>
+
+					<!-- Micro garantías -->
+					<div class="mt-8 pt-6 border-t border-gray-800 grid grid-cols-1 sm:grid-cols-3 gap-4">
+						<div class="flex items-center justify-center gap-2 text-gray-500 text-xs">
+							<span class="material-symbols-outlined text-green-400 text-sm">check_circle</span>
+							Llamada 100% gratuita
+						</div>
+						<div class="flex items-center justify-center gap-2 text-gray-500 text-xs">
+							<span class="material-symbols-outlined text-green-400 text-sm">check_circle</span>
+							Sin compromiso de compra
+						</div>
+						<div class="flex items-center justify-center gap-2 text-gray-500 text-xs">
+							<span class="material-symbols-outlined text-green-400 text-sm">check_circle</span>
+							Respuesta en menos de 24 hrs
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Frase de cierre -->
+				<p class="text-gray-600 text-sm mt-10">
+					Cada semana que pasa sin un sistema es una semana de citas perdidas. <br class="hidden sm:block" />
+					<span class="text-gray-500">El mejor momento para empezar fue ayer. El segundo mejor es hoy.</span>
+				</p>
+
+			</div>
+		</section>
+
+		<!-- Separation -->
+		<div class="max-w-7xl mx-auto px-12">
+			<div class="gradient-line"></div>
+		</div>
+
 		<!-- Contacto -->
 		<section class="py-32 px-6 relative overflow-hidden" id="contact">
 			<div
@@ -764,6 +1559,7 @@
 				</div>
 			</div>
 		</section>
+
 	</main>
 	<!-- Footer -->
 	<footer class="bg-slate-900 border-t border-outline-variant/10">
